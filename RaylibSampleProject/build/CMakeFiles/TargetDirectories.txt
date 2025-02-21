@@ -1,0 +1,3 @@
+/home/killswitch/RaylibProjects/BitRunner/build/CMakeFiles/game.dir
+/home/killswitch/RaylibProjects/BitRunner/build/CMakeFiles/edit_cache.dir
+/home/killswitch/RaylibProjects/BitRunner/build/CMakeFiles/rebuild_cache.dir
