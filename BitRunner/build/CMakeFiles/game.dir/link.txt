@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -march=native -flto CMakeFiles/game.dir/main.c.o -o game   -L/home/killswitch/raylib/src  -Wl,-rpath,/home/killswitch/raylib/src /home/killswitch/raylib/src/libraylib.a -lGL -lm -lpthread -ldl -lrt -lX11 
