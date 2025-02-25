@@ -45,7 +45,93 @@ bool isBlackPiece(char piece) {
     return (piece >= 'a' && piece <= 'z');
 }
 
+bool isVerticalPathClear(){
 
+    bool legal = false;
+
+    if(selectedRow > newRow){
+
+        for(int i = selectedRow-1; i >= newRow; i--){
+            if(i == newRow && boards[newRow][newCol] != ' '){
+                legal = true;
+                PlaySound(captureSound);
+            }
+            else{
+                if(boards[i][selectedCol] == ' '){
+                    legal = true;
+                }
+                else{
+                    legal = false;
+                    break;
+                }
+            }
+        }
+
+    }
+    else{
+        for(int i = selectedRow+1; i <= newRow; i++){
+            if(i == newRow && boards[newRow][newCol] != ' '){
+                legal = true;
+                PlaySound(captureSound);
+            }
+            else{
+                if(boards[i][selectedCol] == ' '){
+                    legal = true;
+                }
+                else{
+                    legal = false;
+                    break;
+                }
+            }
+        }
+        
+    }
+
+    return legal;
+}
+
+bool isHorizontalPathClear(){
+    bool legal = false;
+
+    if(newCol > selectedCol){
+        for(int i = selectedCol+1; i <= newCol; i++){
+            if(i == newCol && boards[newRow][newCol] != ' '){
+                legal = true;
+                PlaySound(captureSound);
+            }
+            else{
+                if(boards[selectedRow][i] == ' '){
+                    legal = true;
+                }
+                else{
+                    legal = false;
+                    break;
+                }
+            }
+            
+        }
+    }
+    else{
+        for(int i = selectedCol-1; i >= newCol; i--){
+            if(i == newCol && boards[newRow][newCol] != ' '){
+                legal = true;
+                PlaySound(captureSound);
+            }
+            else{
+                if(boards[selectedRow][i] == ' '){
+                    legal = true;
+                }
+                else{
+                    legal = false;
+                    break;
+                }
+            }
+        }
+    }
+
+    return legal;
+    
+}
 
 void draw(Texture2D wKing, Texture2D wBishop, Texture2D wKinght, Texture2D wPawn, Texture2D wQueen, Texture2D wRook, Texture2D bKing, Texture2D bBishop, Texture2D bKnight, Texture2D bPawn, Texture2D bQueen, Texture2D bRook ){
     BeginDrawing();
@@ -115,12 +201,16 @@ bool isLegalPawnMove(){
             if( (newRow == selectedRow-1 || newRow == selectedRow-2) && selectedCol == newCol){
                 legal = true;
             }
+            else if(boards[newRow][newCol] != ' ' && (newRow == selectedRow-1 && (newCol == selectedCol-1 || newCol == selectedCol+1)) && isBlackPiece(boards[newRow][newCol]) && (newCol != selectedCol)){
+                capture = true;
+                legal = true;
+            }
         }
         else{
             if(newRow == selectedRow-1 && selectedCol == newCol && boards[newRow][newCol] == ' '){
                 legal = true;
             }
-            else if(boards[newRow][newCol] != ' ' && (newRow == selectedRow-1 && (newCol == selectedCol-1 || newCol == selectedCol+1)) && isBlackPiece(boards[newRow][newCol])){
+            else if(boards[newRow][newCol] != ' ' && (newRow == selectedRow-1 && (newCol == selectedCol-1 || newCol == selectedCol+1)) && isBlackPiece(boards[newRow][newCol]) && (newCol != selectedCol)){
                 capture = true;
                 legal = true;
             }
@@ -131,12 +221,16 @@ bool isLegalPawnMove(){
             if( (newRow == selectedRow+1 || newRow == selectedRow+2) && selectedCol == newCol){
                 legal = true;
             }
+            else if((newRow == selectedRow+1 && (newCol == selectedCol-1 || newCol == selectedCol+1)) && isWhitePiece(boards[newRow][newCol]) && (newCol != selectedCol)){
+                capture = true;
+                legal = true;
+            }
         }
         else{
             if(newRow == selectedRow+1 && selectedCol == newCol && boards[newRow][newCol] == ' '){
                 legal = true;
             }
-            else if(boards[newRow][newCol] != ' ' && (newRow == selectedRow+1 && (newCol == selectedCol-1 || newCol == selectedCol+1)) && isWhitePiece(boards[newRow][newCol])){
+            else if((newRow == selectedRow+1 && (newCol == selectedCol-1 || newCol == selectedCol+1)) && isWhitePiece(boards[newRow][newCol]) && (newCol != selectedCol)){
                 capture = true;
                 legal = true;
             }
@@ -148,8 +242,19 @@ bool isLegalPawnMove(){
 
 bool isLegalRookMove(){
     bool legal = false;
+    bool capture = false;
 
+    if(isVerticalPathClear() && newCol == selectedCol){
+        legal = true;
+    }
+    else if(isHorizontalPathClear() && newRow == selectedRow){
+        legal = true;
+    }
+    else{
+        legal = false;
+    }
 
+    return legal;
 }
 
 
@@ -163,9 +268,23 @@ bool isLegalMove(char piece, int newRow, int newCol){
             return false;
         }
     }
+    else if(piece == 'R'|| piece == 'r'){
+        if(isLegalRookMove()){
+            return true;
+        }
+        else{
+            PlaySound(illegalSound);
+            return false;
+        }
+    }
+
+
     else{
         return false;
     }
+
+
+
     }    
 
 
@@ -197,7 +316,6 @@ void selectPiece(){
                 if(selected && isLegalMove(boards[selectedRow][selectedCol], newRow, newCol)){
                     boards[newRow][newCol] = boards[selectedRow][selectedCol];
                     boards[selectedRow][selectedCol] = ' ';
-
                     if(capture == true){
                         PlaySound(captureSound);
                     }

@@ -1,3 +1,0 @@
-/home/killswitch/RaylibProjects/Chess/build/CMakeFiles/game.dir
-/home/killswitch/RaylibProjects/Chess/build/CMakeFiles/edit_cache.dir
-/home/killswitch/RaylibProjects/Chess/build/CMakeFiles/rebuild_cache.dir
