@@ -344,7 +344,7 @@ void selectPiece(){
     
 int main(void){
 
-    InitWindow(screenWidth, screenHeight, "Chess");
+    InitWindow(screenWidth, screenHeight, "Chess!");
     SetTargetFPS(60);
 
     InitAudioDevice();
