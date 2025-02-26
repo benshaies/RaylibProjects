@@ -1,7 +1,8 @@
 #include "raylib.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-const int screenWidth = 1024;
+const int screenWidth = 1324;
 const int screenHeight = 1024;
 
 Rectangle board[8][8];
@@ -14,6 +15,25 @@ char boards[8][8] = {
     {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
     {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
     {'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'}
+};
+
+char capturedBlackPieces[2][8] = {
+    {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+    {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+};
+Vector2 whitePiecesLocation[2][8] = {
+    {{1030, 75}, {1065, 75}, {1100, 75}, {1135, 75}, {1170, 75}, {1205, 75}, {1240, 75}, {1275, 75}},
+    {{1030, 150}, {1065, 150}, {1100, 150}, {1135, 150}, {1170, 150}, {1205, 150}, {1240, 150}, {1275, 150}}
+};
+
+char capturedWhitePieces[2][8] = {
+    {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+    {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+};
+
+Vector2 blackPiecesLocation[2][8] = {
+    {{1030, 587}, {1065, 587}, {1100, 587}, {1135, 587}, {1170, 587}, {1205, 587}, {1240, 587}, {1275, 587}},
+    {{1030, 662}, {1065, 662}, {1100, 662}, {1135, 662}, {1170, 662}, {1205, 662}, {1240, 662}, {1275, 662}}
 };
 
 int turn = 0;
@@ -30,6 +50,7 @@ bool capture = false;
 Color boardBrown = {139, 69, 19, 255};
 Color boardWhite = {245, 245, 220, 255};
 Color boardHighlight = {255, 223, 0, 150};
+Color circleColor = { 143, 188, 143, 255 };
 
 Sound captureSound;
 Sound gameEndSound;
@@ -45,6 +66,89 @@ bool isBlackPiece(char piece) {
     return (piece >= 'a' && piece <= 'z');
 }
 
+bool isUpDiagonalClear(){
+    int testCol = 0;
+    bool legal = false;
+    
+    //Up Right Movement
+    if(abs(selectedRow - newRow) == abs(selectedCol - newCol)){
+        if(newRow < selectedRow && newCol > selectedCol){
+            testCol = selectedCol + 1;
+            for(int i = selectedRow - 1; i >= newRow; i--){
+                if(i == newRow){
+                    legal = true;
+                }
+                else{
+                    if(boards[i][testCol] != ' '){
+                        legal = false;
+                        break;
+                    }
+                }
+                testCol++;
+            }
+        }
+        //Up Left Movement
+        else if(newRow < selectedRow && newCol < selectedCol){
+            testCol = selectedCol - 1;
+            for(int i = selectedRow - 1; i >= newRow; i--){
+                if(i == newRow){
+                    legal = true;
+                }
+                else{
+                    if(boards[i][testCol] != ' '){
+                        legal = false;
+                        break;
+                    }
+                }
+                testCol--;
+            }
+        }
+    }    
+
+return legal;
+}
+
+bool isDownDiagonalClear(){
+    int testCol = 0;
+    bool legal = false;
+    
+    if(abs(selectedRow - newRow) == abs(selectedCol - newCol)){
+        //Down Left Movement
+        if(newRow > selectedRow && newCol < selectedCol){
+            testCol = selectedCol - 1;
+            for(int i = selectedRow + 1; i <= newRow; i++){
+                if(i == newRow){
+                    legal = true;
+                }
+                else{
+                    if(boards[i][testCol] != ' '){
+                        legal = false;
+                        break;
+                    }
+                }
+                testCol--;
+            }
+        }
+        //Down Right Movement
+        else if(newRow > selectedRow && newCol > selectedCol){
+            testCol = selectedCol + 1;
+            for(int i = selectedRow + 1; i <= newRow; i++){
+                if(i == newRow){
+                    legal = true;
+                }
+                else{
+                    if(boards[i][testCol] != ' '){
+                        legal = false;
+                        break;
+                    }
+                }
+                testCol++;
+            }
+        }
+    }
+    return legal;
+}
+
 bool isVerticalPathClear(){
 
     bool legal = false;
@@ -54,7 +158,6 @@ bool isVerticalPathClear(){
         for(int i = selectedRow-1; i >= newRow; i--){
             if(i == newRow && boards[newRow][newCol] != ' '){
                 legal = true;
-                PlaySound(captureSound);
             }
             else{
                 if(boards[i][selectedCol] == ' '){
@@ -72,7 +175,6 @@ bool isVerticalPathClear(){
         for(int i = selectedRow+1; i <= newRow; i++){
             if(i == newRow && boards[newRow][newCol] != ' '){
                 legal = true;
-                PlaySound(captureSound);
             }
             else{
                 if(boards[i][selectedCol] == ' '){
@@ -97,7 +199,9 @@ bool isHorizontalPathClear(){
         for(int i = selectedCol+1; i <= newCol; i++){
             if(i == newCol && boards[newRow][newCol] != ' '){
                 legal = true;
-                PlaySound(captureSound);
+                if(newCol == selectedCol){
+                    PlaySound(captureSound);
+                }
             }
             else{
                 if(boards[selectedRow][i] == ' '){
@@ -115,7 +219,9 @@ bool isHorizontalPathClear(){
         for(int i = selectedCol-1; i >= newCol; i--){
             if(i == newCol && boards[newRow][newCol] != ' '){
                 legal = true;
-                PlaySound(captureSound);
+                if(newCol == selectedCol){
+                    PlaySound(captureSound);
+                }
             }
             else{
                 if(boards[selectedRow][i] == ' '){
@@ -133,10 +239,46 @@ bool isHorizontalPathClear(){
     
 }
 
+void drawUI(){
+
+    DrawRectangle(1024, 0, 300, 512, boardBrown);
+    DrawRectangle(1024, 512, 300, 512, boardWhite);
+
+    if(turn == 0){
+        DrawCircle(1174, 768, 50.0f, circleColor);
+        DrawCircleLines(1174, 768, 50.0f, BLACK);
+    }
+    else{
+        DrawCircle(1174, 256, 50.0f, circleColor);
+        DrawCircleLines(1174, 256, 50.0f, BLACK);
+    }
+
+    DrawText("Pieces Captured", 1050, 10, 30, BLACK);
+    DrawText("Pieces Captured", 1050, 522, 30, BLACK);
+
+    DrawLine(0, 0, 1024, 0, BLACK);
+    DrawLine(1, 1, 1024, 1, BLACK);
+
+    DrawLine(2, 2, 2, 1024, BLACK);
+    DrawLine(1, 1, 1, 1024, BLACK);
+
+    DrawLine(0, 1022, 1022, 1022, BLACK);
+    DrawLine(0, 1023, 1023, 1023, BLACK);
+
+    DrawLine(1024, 512, 1324, 512, BLACK);
+    DrawLine(1024, 513, 1324, 513, BLACK);
+
+    DrawRectangleLines(1024, 0, 300, 1024, BLACK);
+    DrawRectangleLines(1025, 1, 298, 1022, BLACK);
+    DrawRectangleLines(1026, 2, 296, 1020, BLACK);
+}
+
 void draw(Texture2D wKing, Texture2D wBishop, Texture2D wKinght, Texture2D wPawn, Texture2D wQueen, Texture2D wRook, Texture2D bKing, Texture2D bBishop, Texture2D bKnight, Texture2D bPawn, Texture2D bQueen, Texture2D bRook ){
     BeginDrawing();
 
     ClearBackground(RAYWHITE);
+
+    drawUI();
 
     //Draw Board and update board
     for (int row = 0; row < 8; row++) {
@@ -148,6 +290,7 @@ void draw(Texture2D wKing, Texture2D wBishop, Texture2D wKinght, Texture2D wPawn
             else{
                 DrawRectangleRec(board[row][col], color);
             }
+
 
             if(boards[row][col] == 'r'){
                 DrawTexture(bRook, board[row][col].x, board[row][col].y, WHITE);
@@ -188,6 +331,49 @@ void draw(Texture2D wKing, Texture2D wBishop, Texture2D wKinght, Texture2D wPawn
             }
         }
     }
+
+    for(int row = 0; row < 2; row++){
+        for(int col = 0; col < 8; col++){
+            if(capturedBlackPieces[row][col] == 'r'){
+                DrawTextureEx(bRook, blackPiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+            if(capturedBlackPieces[row][col] == 'n'){
+                DrawTextureEx(bKnight, blackPiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+            if(capturedBlackPieces[row][col] == 'b'){
+                DrawTextureEx(bBishop, blackPiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+            if(capturedBlackPieces[row][col] == 'q'){
+                DrawTextureEx(bQueen, blackPiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+            if(capturedBlackPieces[row][col] == 'k'){
+                DrawTextureEx(bKing, blackPiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+            if(capturedBlackPieces[row][col] == 'p'){
+                DrawTextureEx(bPawn, blackPiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+
+            if(capturedWhitePieces[row][col] == 'R'){
+                DrawTextureEx(wRook, whitePiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+            if(capturedWhitePieces[row][col] == 'N'){
+                DrawTextureEx(wKinght, whitePiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+            if(capturedWhitePieces[row][col] == 'B'){
+                DrawTextureEx(wBishop, whitePiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+            if(capturedWhitePieces[row][col] == 'Q'){
+                DrawTextureEx(wQueen, whitePiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+            if(capturedWhitePieces[row][col] == 'K'){
+                DrawTextureEx(wKing, whitePiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+            if(capturedWhitePieces[row][col] == 'P'){
+                DrawTextureEx(wPawn, whitePiecesLocation[row][col], 0.0f, 0.25f, WHITE);
+            }
+        }
+    }
+
 
     EndDrawing();
 }
@@ -257,6 +443,59 @@ bool isLegalRookMove(){
     return legal;
 }
 
+bool isLegalBishopMove(){
+    bool legal = false;
+
+    if(isUpDiagonalClear()||isDownDiagonalClear() ){
+        legal = true;
+    }
+    else{
+        legal = false;
+    }
+
+    return legal;
+}
+
+bool isLegalKnightMove(){
+    bool legal = false;
+
+    if(newRow == selectedRow-2 && newCol == selectedCol + 1){
+        legal = true;
+    }
+    else if(newRow == selectedRow - 1 && newCol == selectedCol + 2){
+        legal = true;
+    }
+    else if(newRow == selectedRow + 1 && newCol == selectedCol + 2){
+        legal = true;
+    }
+    else if(newRow == selectedRow + 2 && newCol == selectedCol + 1){
+        legal = true;
+    }
+    else if(newRow == selectedRow + 2 && newCol == selectedCol - 1){
+        legal = true;
+    }
+    else if(newRow == selectedRow + 1 && newCol == selectedCol - 2){
+        legal = true;
+    }
+    else if(newRow == selectedRow - 1 && newCol == selectedCol - 2){
+        legal = true;
+    }
+    else if(newRow == selectedRow - 2 && newCol == selectedCol - 1){
+        legal = true;
+    }
+
+    return legal;
+}
+
+bool isLegalQueenMove(){
+    bool legal = false;
+
+    if((isVerticalPathClear() && newCol == selectedCol)||(isHorizontalPathClear() && newRow == selectedRow)||isUpDiagonalClear()||isDownDiagonalClear()){
+        legal = true;
+    }
+
+    return legal;
+}
 
 bool isLegalMove(char piece, int newRow, int newCol){
     if(piece == 'P' || piece == 'p'){
@@ -277,14 +516,36 @@ bool isLegalMove(char piece, int newRow, int newCol){
             return false;
         }
     }
-
-
+    else if(piece == 'B'||piece == 'b'){
+        if(isLegalBishopMove()){
+            return true;
+        }
+        else{
+            PlaySound(illegalSound);
+            return false;
+        }
+    }
+    else if(piece == 'N'||piece == 'n'){
+        if(isLegalKnightMove()){
+            return true;
+        }
+        else{
+            PlaySound(illegalSound);
+            return false;
+        }
+    }
+    else if(piece == 'Q'||piece == 'q'){
+        if(isLegalQueenMove()){
+            return true;
+        }
+        else{
+            PlaySound(illegalSound);
+            return false;
+        }
+    }
     else{
         return false;
     }
-
-
-
     }    
 
 
@@ -314,18 +575,40 @@ void selectPiece(){
                 newRow = row;
                 newCol = col;
                 if(selected && isLegalMove(boards[selectedRow][selectedCol], newRow, newCol)){
-                    boards[newRow][newCol] = boards[selectedRow][selectedCol];
-                    boards[selectedRow][selectedCol] = ' ';
-                    if(capture == true){
+                    
+                    if(boards[newRow][newCol] != ' '){
                         PlaySound(captureSound);
+                        for(int i = 0; i < 2; i++){
+                            for(int j = 0; j < 8; j++){
+                                if(turn == 0){
+                                    if(capturedBlackPieces[i][j] == ' '){
+                                        capturedBlackPieces[i][j] = boards[newRow][newCol];
+                                        i = 2;
+                                        j = 8;
+                                    }
+                                }
+                                else{
+                                    if(capturedWhitePieces[i][j] == ' '){
+                                        capturedWhitePieces[i][j] = boards[newRow][newCol];
+                                        i = 2;
+                                        j = 8;
+                                    }
+                                }
+                            }
+                        }
                     }
                     else{
                         PlaySound(moveSound);
                     }
+                    
+                    boards[newRow][newCol] = boards[selectedRow][selectedCol];
+                    boards[selectedRow][selectedCol] = ' ';
 
                     selected = false;
                     selectedRow = -1;
                     selectedCol = -1;
+                    newRow = -1;
+                    newCol = -1;
 
                     if(turn == 0){
                         turn = 1;
