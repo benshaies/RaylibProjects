@@ -5,6 +5,17 @@
 const int screenWidth = 1324;
 const int screenHeight = 1024;
 
+bool reset = false;
+bool resetOne = false;
+bool resetTwo = false;
+bool playAgain = false;
+bool whiteWins = false;
+bool blackWins = false;
+
+Rectangle playAgainRect = {512, 437, 300, 150};
+Rectangle reset1 = {1074, 400, 200, 100};
+Rectangle reset2 = {1074, 900, 200, 100};
+
 Rectangle board[8][8];
 char boards[8][8] = {
     {'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'},
@@ -57,6 +68,15 @@ Sound gameEndSound;
 Sound illegalSound;
 Sound checkSound;
 Sound moveSound;
+
+// Dummy function to bypass linking error
+void _glfwSetWindowContentScaleCallback() {
+    // Do nothing, only needed for linking
+}
+
+
+bool isLegalKingMove();
+bool isLegalMove(char piece, int newRow, int newCol);
 
 bool isWhitePiece(char piece) {
     return (piece >= 'A' && piece <= 'Z');
@@ -256,6 +276,38 @@ void drawUI(){
     DrawText("Pieces Captured", 1050, 10, 30, BLACK);
     DrawText("Pieces Captured", 1050, 522, 30, BLACK);
 
+    //Button
+    if(!resetOne){DrawRectangleRec(reset1, boardWhite);}
+    else{DrawRectangleRec(reset1, boardHighlight);}
+    DrawRectangleLinesEx(reset1, 3.0f, BLACK);
+    DrawText("Reset", reset1.x+25, reset1.y+25, 50.0f, boardBrown);
+
+    if(!resetTwo){DrawRectangleRec(reset2, boardBrown);}
+    else{DrawRectangleRec(reset2, boardHighlight);}
+    DrawRectangleLinesEx(reset2, 3.0f, BLACK);
+    DrawText("Reset", reset2.x+25, reset2.y+25, 50.0f, boardWhite);
+
+    Vector2 mousePos = GetMousePosition();
+    if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)&&CheckCollisionPointRec(mousePos, reset1)){
+        if(resetOne){
+            resetOne = false;
+        }
+        else{
+            resetOne = true;
+            PlaySound(checkSound);
+        }
+    }
+    else if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)&&CheckCollisionPointRec(mousePos, reset2)){
+        if(resetTwo){
+            resetTwo = false;
+        }
+        else{
+            resetTwo = true;
+            PlaySound(checkSound);
+        }
+    }
+
+
     DrawLine(0, 0, 1024, 0, BLACK);
     DrawLine(1, 1, 1024, 1, BLACK);
 
@@ -274,7 +326,7 @@ void drawUI(){
 }
 
 void draw(Texture2D wKing, Texture2D wBishop, Texture2D wKinght, Texture2D wPawn, Texture2D wQueen, Texture2D wRook, Texture2D bKing, Texture2D bBishop, Texture2D bKnight, Texture2D bPawn, Texture2D bQueen, Texture2D bRook ){
-    BeginDrawing();
+
 
     ClearBackground(RAYWHITE);
 
@@ -374,8 +426,7 @@ void draw(Texture2D wKing, Texture2D wBishop, Texture2D wKinght, Texture2D wPawn
         }
     }
 
-
-    EndDrawing();
+    
 }
 
 bool isLegalPawnMove(){
@@ -497,6 +548,17 @@ bool isLegalQueenMove(){
     return legal;
 }
 
+bool isLegalKingMove(){
+    bool legal = false;
+
+    if (abs(newRow - selectedRow) <= 1 && abs(newCol - selectedCol) <= 1) {
+        legal = true;
+    }
+
+    return legal;
+
+}
+
 bool isLegalMove(char piece, int newRow, int newCol){
     if(piece == 'P' || piece == 'p'){
         if(isLegalPawnMove()){
@@ -543,11 +605,19 @@ bool isLegalMove(char piece, int newRow, int newCol){
             return false;
         }
     }
+    else if(piece == 'K'||piece == 'k'){
+        if(isLegalKingMove()){
+            return true;
+        }
+        else{
+            PlaySound(illegalSound);
+            return false;
+        }
+    }
     else{
         return false;
     }
-    }    
-
+    }  
 
 void selectPiece(){
     for(int row = 0; row < 8; row++){
@@ -578,6 +648,14 @@ void selectPiece(){
                     
                     if(boards[newRow][newCol] != ' '){
                         PlaySound(captureSound);
+                        if(boards[newRow][newCol] == 'K'){
+                            WaitTime(1.5);
+                            blackWins = true;
+                        }
+                        else if(boards[newRow][newCol] == 'k'){
+                            WaitTime(1.5);
+                            whiteWins = true;
+                        }
                         for(int i = 0; i < 2; i++){
                             for(int j = 0; j < 8; j++){
                                 if(turn == 0){
@@ -658,11 +736,95 @@ int main(void){
     Texture2D bKnight = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_Knight.png");
     Texture2D bPawn = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_Pawn.png");
     Texture2D bQueen = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_Queen.png");
-    Texture2D bRook = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_Rook.png");    
+    Texture2D bRook = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_Rook.png");
+
+    PlaySound(gameEndSound);    
     
     while(!WindowShouldClose()){
 
-        draw(wKing,wBishop,wKnight, wPawn, wQueen, wRook, bKing, bBishop, bKnight, bPawn, bQueen, bRook);
+        if(resetOne && resetTwo){
+            reset = true;
+        }
+        if(reset){
+            PlaySound(gameEndSound);
+            char initialBoard[8][8] = {
+                {'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'},
+                {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+                {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+                {'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'}
+            };
+
+            // Copy the values to the global boards array
+            for (int row = 0; row < 8; row++) {
+                for (int col = 0; col < 8; col++) {
+                    boards[row][col] = initialBoard[row][col];
+                }
+            }
+
+            reset = false;
+            resetOne = false;
+            resetTwo = false;
+
+                    // Reset captured Black pieces
+            for (int row = 0; row < 2; row++) {
+                for (int col = 0; col < 8; col++) {
+                    capturedBlackPieces[row][col] = ' ';
+                }
+            }
+
+            // Reset captured White pieces
+            for (int row = 0; row < 2; row++) {
+                for (int col = 0; col < 8; col++) {
+                    capturedWhitePieces[row][col] = ' ';
+                }
+            }
+
+            turn = 0;
+            selectedRow = -1;
+            selectedCol = -1;
+            newRow;
+            newCol;
+            selected  = false;
+            start = true;
+            capture = false;
+            playAgain = false;
+            blackWins = false;
+            whiteWins = false;
+        }
+        BeginDrawing();
+
+        if(!(blackWins||whiteWins)){
+            draw(wKing,wBishop,wKnight, wPawn, wQueen, wRook, bKing, bBishop, bKnight, bPawn, bQueen, bRook);
+        }
+        
         selectPiece();
+
+        if(blackWins||whiteWins){
+        Vector2 mousePos = GetMousePosition();
+        ClearBackground(boardBrown);
+        DrawRectangleRec(playAgainRect, boardWhite);
+        DrawRectangleLinesEx(playAgainRect, 3.0f, BLACK);
+        DrawText("Play Again", playAgainRect.x+25, playAgainRect.y+50, 50.0f, BLACK);
+        DrawTextureEx(wKing, (Vector2){800, 300}, 0.0f, 3.0f, WHITE);
+        DrawTextureEx(bKing, (Vector2){150, 300}, 0.0f, 3.0f, WHITE);
+        if(blackWins){
+            DrawText("Winner", 250, 700, 50, GREEN);
+            DrawText("Loser", 900, 700, 50, RED);
+        }
+        else{
+            DrawText("Loser", 250, 700, 50, RED);
+            DrawText("Winner", 900, 700, 50, GREEN);
+        }
+        
+        if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)&&CheckCollisionPointRec(mousePos, playAgainRect)){
+            reset = true;
+        }
+        }
+
+        EndDrawing();
     }    
 }
