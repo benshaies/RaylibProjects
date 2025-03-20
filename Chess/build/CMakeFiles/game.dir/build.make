@@ -92,7 +92,7 @@ game_EXTERNAL_OBJECTS =
 
 game: CMakeFiles/game.dir/main.c.o
 game: CMakeFiles/game.dir/build.make
-game: /home/killswitch/raylib/src/libraylib.a
+game: /usr/local/lib/libraylib.a
 game: CMakeFiles/game.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/killswitch/RaylibProjects/Chess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
