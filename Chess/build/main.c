@@ -21,7 +21,7 @@ char boards[8][8] = {
     {'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'},
     {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
     {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-    {' ', ' ', ' ', 'P', ' ', ' ', ' ', ' '},
+    {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
     {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
     {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
     {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
@@ -709,11 +709,11 @@ int main(void){
     SetTargetFPS(60);
 
     InitAudioDevice();
-    captureSound = LoadSound("Sound/capture.wav");
-    gameEndSound = LoadSound("Sound/game-end.wav");
-    illegalSound = LoadSound("Sound/illegal.wav");
-    checkSound = LoadSound("Sound/move-check.wav");
-    moveSound = LoadSound("Sound/move-self.wav");
+    captureSound = LoadSound("/home/killswitch/RaylibProjects/Chess/Sound/capture.wav");
+    gameEndSound = LoadSound("/home/killswitch/RaylibProjects/Chess/Sound/game-end.wav");
+    illegalSound = LoadSound("/home/killswitch/RaylibProjects/Chess/Sound/illegal.wav");
+    checkSound = LoadSound("/home/killswitch/RaylibProjects/Chess/Sound/move-check.wav");
+    moveSound = LoadSound("/home/killswitch/RaylibProjects/Chess/Sound/move-self.wav");
 
     for (int row = 0; row < 8; row++) {
         for (int col = 0; col < 8; col++) {
@@ -724,19 +724,19 @@ int main(void){
         }
     }
 
-    Texture2D wKing = LoadTexture("w_King.png");
-    Texture2D wBishop = LoadTexture("w_Bishop.png");
-    Texture2D wKnight = LoadTexture("w_Knight.png");
-    Texture2D wPawn = LoadTexture("w_Pawn.png");
-    Texture2D wQueen = LoadTexture("w_Queen.png");
-    Texture2D wRook = LoadTexture("w_Rook.png");
+    Texture2D wKing = LoadTexture("/home/killswitch/RaylibProjects/Chess/w_King.png");
+    Texture2D wBishop = LoadTexture("/home/killswitch/RaylibProjects/Chess/w_Bishop.png");
+    Texture2D wKnight = LoadTexture("/home/killswitch/RaylibProjects/Chess/w_Knight.png");
+    Texture2D wPawn = LoadTexture("/home/killswitch/RaylibProjects/Chess/w_Pawn.png");
+    Texture2D wQueen = LoadTexture("/home/killswitch/RaylibProjects/Chess/w_Queen.png");
+    Texture2D wRook = LoadTexture("/home/killswitch/RaylibProjects/Chess/w_Rook.png");
 
-    Texture2D bKing = LoadTexture("b_King.png");
-    Texture2D bBishop = LoadTexture("b_Bishop.png");
-    Texture2D bKnight = LoadTexture("b_Knight.png");
-    Texture2D bPawn = LoadTexture("b_Pawn.png");
-    Texture2D bQueen = LoadTexture("b_Queen.png");
-    Texture2D bRook = LoadTexture("b_Rook.png");
+    Texture2D bKing = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_King.png");
+    Texture2D bBishop = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_Bishop.png");
+    Texture2D bKnight = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_Knight.png");
+    Texture2D bPawn = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_Pawn.png");
+    Texture2D bQueen = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_Queen.png");
+    Texture2D bRook = LoadTexture("/home/killswitch/RaylibProjects/Chess/b_Rook.png");
 
     PlaySound(gameEndSound);    
     
