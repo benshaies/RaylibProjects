@@ -1,0 +1,3 @@
+/home/killswitch/RaylibProjects/ProductivityTimer/build/CMakeFiles/game.dir
+/home/killswitch/RaylibProjects/ProductivityTimer/build/CMakeFiles/edit_cache.dir
+/home/killswitch/RaylibProjects/ProductivityTimer/build/CMakeFiles/rebuild_cache.dir
