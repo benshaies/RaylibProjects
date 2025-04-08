@@ -1,0 +1,3 @@
+/home/killswitch/RaylibProjects/FakeOS/build/CMakeFiles/game.dir
+/home/killswitch/RaylibProjects/FakeOS/build/CMakeFiles/edit_cache.dir
+/home/killswitch/RaylibProjects/FakeOS/build/CMakeFiles/rebuild_cache.dir
