@@ -6,7 +6,7 @@
 int screenWidth = 1920;
 int screenHeight = 1080;
 
-float timer = 10.0f;
+float timer = 1500.0f;
 int minutes;
 int seconds;
 
@@ -239,25 +239,6 @@ void draw(){
         DrawRectangleRec(dark, themeDark);
         DrawRectangleRec(white, WHITE);
 
-        if(isClicked(calm)){
-            plainBackground = themeCalm;
-        }
-        else if(isClicked(cozy)){
-            plainBackground = themeCozy;
-        }
-        else if(isClicked(fresh)){
-            plainBackground = themeFresh;
-        }
-        else if(isClicked(dreamy)){
-            plainBackground = themeDreamy;
-        }
-        else if(isClicked(dark)){
-            plainBackground = themeDark;
-        }
-        else if(isClicked(white)){
-            plainBackground = WHITE;
-        }
-
     }
     
 
@@ -300,8 +281,29 @@ int main(void){
         minutes = timer/60;
         seconds = timer - (minutes*60);
 
-        draw();
+        
         controlUI();
+
+        if(!displayBackground){
+            if(isClicked(calm)){
+                plainBackground = themeCalm;
+            }
+            else if(isClicked(cozy)){
+                plainBackground = themeCozy;
+            }
+            else if(isClicked(fresh)){
+                plainBackground = themeFresh;
+            }
+            else if(isClicked(dreamy)){
+                plainBackground = themeDreamy;
+            }
+            else if(isClicked(dark)){
+                plainBackground = themeDark;
+            }
+            else if(isClicked(white)){
+                plainBackground = WHITE;
+            }
+        }
 
         if(startTimer){
             timer -= GetFrameTime();
@@ -340,6 +342,8 @@ int main(void){
                 fullscreen = false;
             }
         }
+
+        draw();
     }
     UnloadSound(startButtonClick);
     UnloadSound(tabClick);
