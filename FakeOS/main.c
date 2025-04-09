@@ -229,13 +229,9 @@ void drawMainScreen(){
 
 }
 
-void drawCursor(){
-    HideCursor();
-    mousePos = GetMousePosition();
-    DrawTexturePro(cursorTexture, (Rectangle){0,0, 320, 320}, (Rectangle){mousePos.x, mousePos.y, 50, 50}, (Vector2){14,6}, 0.0f, WHITE);
-}
-
 void draw(){
+    mousePos = GetMousePosition();
+
     BeginDrawing();
 
 
@@ -244,11 +240,11 @@ void draw(){
     }
     else if(currentScene == 1){
         drawLoginScreen();
-        drawCursor();
+        DrawTexturePro(cursorTexture, (Rectangle){0,0, 320, 320}, (Rectangle){mousePos.x, mousePos.y, 50, 50}, (Vector2){14,6}, 0.0f, WHITE);
     }
     else if(currentScene == 2){
         drawMainScreen();
-        drawCursor();
+        DrawTexturePro(cursorTexture, (Rectangle){0,0, 320, 320}, (Rectangle){mousePos.x, mousePos.y, 50, 50}, (Vector2){14,6}, 0.0f, WHITE);
 
     }
 
@@ -271,6 +267,8 @@ void init(){
     volumeText[1] = LoadTexture("../assets/volumeLow.png");
     volumeText[2] = LoadTexture("../assets/volumeMid.png");
     volumeText[3] = LoadTexture("../assets/volumeMax.png");
+
+    HideCursor();
 }
 
 
