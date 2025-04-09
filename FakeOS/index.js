@@ -201,7 +201,7 @@ Module['FS_createPath']("/build/CMakeFiles", "game.dir", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/raygui.h", "start": 0, "end": 279704}, {"filename": "/main.c", "start": 279704, "end": 281660}, {"filename": "/CMakeLists.txt", "start": 281660, "end": 282113}, {"filename": "/assets/user.png", "start": 282113, "end": 306965}, {"filename": "/assets/logo.png", "start": 306965, "end": 1707666}, {"filename": "/build/Makefile", "start": 1707666, "end": 1712785}, {"filename": "/build/CMakeCache.txt", "start": 1712785, "end": 1725045}, {"filename": "/build/cmake_install.cmake", "start": 1725045, "end": 1726697}, {"filename": "/build/game", "start": 1726697, "end": 2791857}, {"filename": "/build/CMakeFiles/cmake.check_cache", "start": 2791857, "end": 2791942}, {"filename": "/build/CMakeFiles/Makefile.cmake", "start": 2791942, "end": 2797563}, {"filename": "/build/CMakeFiles/TargetDirectories.txt", "start": 2797563, "end": 2797773}, {"filename": "/build/CMakeFiles/CMakeDirectoryInformation.cmake", "start": 2797773, "end": 2798431}, {"filename": "/build/CMakeFiles/CMakeOutput.log", "start": 2798431, "end": 2821706}, {"filename": "/build/CMakeFiles/Makefile2", "start": 2821706, "end": 2825219}, {"filename": "/build/CMakeFiles/progress.marks", "start": 2825219, "end": 2825221}, {"filename": "/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin", "start": 2825221, "end": 2841189}, {"filename": "/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake", "start": 2841189, "end": 2843630}, {"filename": "/build/CMakeFiles/3.22.1/CMakeSystem.cmake", "start": 2843630, "end": 2844028}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c", "start": 2844028, "end": 2868881}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/a.out", "start": 2868881, "end": 2884969}, {"filename": "/build/CMakeFiles/game.dir/flags.make", "start": 2884969, "end": 2885202}, {"filename": "/build/CMakeFiles/game.dir/build.make", "start": 2885202, "end": 2889471}, {"filename": "/build/CMakeFiles/game.dir/progress.make", "start": 2889471, "end": 2889514}, {"filename": "/build/CMakeFiles/game.dir/link.txt", "start": 2889514, "end": 2889722}, {"filename": "/build/CMakeFiles/game.dir/cmake_clean.cmake", "start": 2889722, "end": 2889983}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.make", "start": 2889983, "end": 2890520}, {"filename": "/build/CMakeFiles/game.dir/main.c.o", "start": 2890520, "end": 2903920}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.ts", "start": 2903920, "end": 2904031}, {"filename": "/build/CMakeFiles/game.dir/depend.make", "start": 2904031, "end": 2904119}, {"filename": "/build/CMakeFiles/game.dir/main.c.o.d", "start": 2904119, "end": 2904423}, {"filename": "/build/CMakeFiles/game.dir/DependInfo.cmake", "start": 2904423, "end": 2904966}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.internal", "start": 2904966, "end": 2905361}], "remote_package_size": 2905361, "package_uuid": "0ddcf7d6-f088-4c79-a259-7d0bcb0f37c6"});
+    loadPackage({"files": [{"filename": "/raygui.h", "start": 0, "end": 279704}, {"filename": "/index.wasm", "start": 279704, "end": 959357}, {"filename": "/index.html", "start": 959357, "end": 1061863}, {"filename": "/index.js", "start": 1061863, "end": 1547029}, {"filename": "/index.data", "start": 1547029, "end": 3094058}, {"filename": "/main.c", "start": 3094058, "end": 3102497}, {"filename": "/CMakeLists.txt", "start": 3102497, "end": 3102950}, {"filename": "/assets/volumeMax.png", "start": 3102950, "end": 3103911}, {"filename": "/assets/volumeLow.png", "start": 3103911, "end": 3104411}, {"filename": "/assets/volumeMute.png", "start": 3104411, "end": 3104895}, {"filename": "/assets/loginBackground.jpg", "start": 3104895, "end": 6373242}, {"filename": "/assets/user3.png", "start": 6373242, "end": 6410212}, {"filename": "/assets/user2.png", "start": 6410212, "end": 6441550}, {"filename": "/assets/user.png", "start": 6441550, "end": 6475488}, {"filename": "/assets/wifi.png", "start": 6475488, "end": 6476392}, {"filename": "/assets/cursor.png", "start": 6476392, "end": 6482116}, {"filename": "/assets/logo.png", "start": 6482116, "end": 7882817}, {"filename": "/assets/volumeMid.png", "start": 7882817, "end": 7883527}, {"filename": "/build/Makefile", "start": 7883527, "end": 7888646}, {"filename": "/build/CMakeCache.txt", "start": 7888646, "end": 7900906}, {"filename": "/build/cmake_install.cmake", "start": 7900906, "end": 7902558}, {"filename": "/build/game", "start": 7902558, "end": 8997662}, {"filename": "/build/CMakeFiles/cmake.check_cache", "start": 8997662, "end": 8997747}, {"filename": "/build/CMakeFiles/Makefile.cmake", "start": 8997747, "end": 9003368}, {"filename": "/build/CMakeFiles/TargetDirectories.txt", "start": 9003368, "end": 9003578}, {"filename": "/build/CMakeFiles/CMakeDirectoryInformation.cmake", "start": 9003578, "end": 9004236}, {"filename": "/build/CMakeFiles/CMakeOutput.log", "start": 9004236, "end": 9027511}, {"filename": "/build/CMakeFiles/Makefile2", "start": 9027511, "end": 9031024}, {"filename": "/build/CMakeFiles/progress.marks", "start": 9031024, "end": 9031026}, {"filename": "/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin", "start": 9031026, "end": 9046994}, {"filename": "/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake", "start": 9046994, "end": 9049435}, {"filename": "/build/CMakeFiles/3.22.1/CMakeSystem.cmake", "start": 9049435, "end": 9049833}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c", "start": 9049833, "end": 9074686}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/a.out", "start": 9074686, "end": 9090774}, {"filename": "/build/CMakeFiles/game.dir/flags.make", "start": 9090774, "end": 9091007}, {"filename": "/build/CMakeFiles/game.dir/build.make", "start": 9091007, "end": 9095276}, {"filename": "/build/CMakeFiles/game.dir/progress.make", "start": 9095276, "end": 9095319}, {"filename": "/build/CMakeFiles/game.dir/link.txt", "start": 9095319, "end": 9095527}, {"filename": "/build/CMakeFiles/game.dir/cmake_clean.cmake", "start": 9095527, "end": 9095788}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.make", "start": 9095788, "end": 9103643}, {"filename": "/build/CMakeFiles/game.dir/main.c.o", "start": 9103643, "end": 9370443}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.ts", "start": 9370443, "end": 9370554}, {"filename": "/build/CMakeFiles/game.dir/depend.make", "start": 9370554, "end": 9370642}, {"filename": "/build/CMakeFiles/game.dir/main.c.o.d", "start": 9370642, "end": 9374581}, {"filename": "/build/CMakeFiles/game.dir/DependInfo.cmake", "start": 9374581, "end": 9375124}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.internal", "start": 9375124, "end": 9379028}], "remote_package_size": 9379028, "package_uuid": "2fea25f0-6ba9-4b99-acee-28c6b613cbe2"});
 
   })();
 
@@ -1946,49 +1946,49 @@ var tempI64;
 // === Body ===
 
 var ASM_CONSTS = {
-  29632: function() {if (document.fullscreenElement) return 1;},  
- 29678: function() {return Module.canvas.width;},  
- 29710: function() {return parseInt(Module.canvas.style.width);},  
- 29758: function() {document.exitFullscreen();},  
- 29785: function() {setTimeout(function() { Module.requestFullscreen(false, false); }, 100);},  
- 29858: function() {if (document.fullscreenElement) return 1;},  
- 29904: function() {return Module.canvas.width;},  
- 29936: function() {return screen.width;},  
- 29961: function() {document.exitFullscreen();},  
- 29988: function() {setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100);},  
- 30121: function() {return window.innerWidth;},  
- 30147: function() {return window.innerHeight;},  
- 30174: function() {if (document.fullscreenElement) return 1;},  
- 30220: function() {return Module.canvas.width;},  
- 30252: function() {return parseInt(Module.canvas.style.width);},  
- 30300: function() {if (document.fullscreenElement) return 1;},  
- 30346: function() {return Module.canvas.width;},  
- 30378: function() {return screen.width;},  
- 30403: function() {return window.innerWidth;},  
- 30429: function() {return window.innerHeight;},  
- 30456: function() {if (document.fullscreenElement) return 1;},  
- 30502: function() {return Module.canvas.width;},  
- 30534: function() {return screen.width;},  
- 30559: function() {document.exitFullscreen();},  
- 30586: function() {if (document.fullscreenElement) return 1;},  
- 30632: function() {return Module.canvas.width;},  
- 30664: function() {return parseInt(Module.canvas.style.width);},  
- 30712: function() {document.exitFullscreen();},  
- 30739: function($0) {Module.canvas.style.opacity = $0;},  
- 30777: function() {return screen.width;},  
- 30802: function() {return screen.height;},  
- 30828: function() {return window.screenX;},  
- 30855: function() {return window.screenY;},  
- 30882: function() {return window.devicePixelRatio;},  
- 30918: function($0) {navigator.clipboard.writeText(UTF8ToString($0));},  
- 30971: function($0) {Module.canvas.style.cursor = UTF8ToString($0);},  
- 31022: function() {Module.canvas.style.cursor = 'none';},  
- 31059: function($0, $1, $2, $3) {try { navigator.getGamepads()[$0].vibrationActuator.playEffect('dual-rumble', { startDelay: 0, duration: $3, weakMagnitude: $1, strongMagnitude: $2 }); } catch (e) { try { navigator.getGamepads()[$0].hapticActuators[0].pulse($2, $3); } catch (e) { } }},  
- 31315: function($0) {Module.canvas.style.cursor = UTF8ToString($0);},  
- 31366: function() {if (document.fullscreenElement) return 1;},  
- 31412: function() {return window.innerWidth;},  
- 31438: function() {return window.innerHeight;},  
- 31465: function() {if (document.pointerLockElement) return 1;}
+  38224: function() {if (document.fullscreenElement) return 1;},  
+ 38270: function() {return Module.canvas.width;},  
+ 38302: function() {return parseInt(Module.canvas.style.width);},  
+ 38350: function() {document.exitFullscreen();},  
+ 38377: function() {setTimeout(function() { Module.requestFullscreen(false, false); }, 100);},  
+ 38450: function() {if (document.fullscreenElement) return 1;},  
+ 38496: function() {return Module.canvas.width;},  
+ 38528: function() {return screen.width;},  
+ 38553: function() {document.exitFullscreen();},  
+ 38580: function() {setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100);},  
+ 38713: function() {return window.innerWidth;},  
+ 38739: function() {return window.innerHeight;},  
+ 38766: function() {if (document.fullscreenElement) return 1;},  
+ 38812: function() {return Module.canvas.width;},  
+ 38844: function() {return parseInt(Module.canvas.style.width);},  
+ 38892: function() {if (document.fullscreenElement) return 1;},  
+ 38938: function() {return Module.canvas.width;},  
+ 38970: function() {return screen.width;},  
+ 38995: function() {return window.innerWidth;},  
+ 39021: function() {return window.innerHeight;},  
+ 39048: function() {if (document.fullscreenElement) return 1;},  
+ 39094: function() {return Module.canvas.width;},  
+ 39126: function() {return screen.width;},  
+ 39151: function() {document.exitFullscreen();},  
+ 39178: function() {if (document.fullscreenElement) return 1;},  
+ 39224: function() {return Module.canvas.width;},  
+ 39256: function() {return parseInt(Module.canvas.style.width);},  
+ 39304: function() {document.exitFullscreen();},  
+ 39331: function($0) {Module.canvas.style.opacity = $0;},  
+ 39369: function() {return screen.width;},  
+ 39394: function() {return screen.height;},  
+ 39420: function() {return window.screenX;},  
+ 39447: function() {return window.screenY;},  
+ 39474: function() {return window.devicePixelRatio;},  
+ 39510: function($0) {navigator.clipboard.writeText(UTF8ToString($0));},  
+ 39563: function($0) {Module.canvas.style.cursor = UTF8ToString($0);},  
+ 39614: function() {Module.canvas.style.cursor = 'none';},  
+ 39651: function($0, $1, $2, $3) {try { navigator.getGamepads()[$0].vibrationActuator.playEffect('dual-rumble', { startDelay: 0, duration: $3, weakMagnitude: $1, strongMagnitude: $2 }); } catch (e) { try { navigator.getGamepads()[$0].hapticActuators[0].pulse($2, $3); } catch (e) { } }},  
+ 39907: function($0) {Module.canvas.style.cursor = UTF8ToString($0);},  
+ 39958: function() {if (document.fullscreenElement) return 1;},  
+ 40004: function() {return window.innerWidth;},  
+ 40030: function() {return window.innerHeight;},  
+ 40057: function() {if (document.pointerLockElement) return 1;}
 };
 function GetCanvasIdJs(){ var canvasId = "#" + Module.canvas.id; var lengthBytes = lengthBytesUTF8(canvasId) + 1; var stringOnWasmHeap = _malloc(lengthBytes); stringToUTF8(canvasId, stringOnWasmHeap, lengthBytes); return stringOnWasmHeap; }
 
@@ -4562,6 +4562,73 @@ function GetCanvasIdJs(){ var canvasId = "#" + Module.canvas.id; var lengthBytes
     return -e.errno;
   }
   }
+
+  function __localtime_js(time, tmPtr) {
+      var date = new Date(HEAP32[((time)>>2)]*1000);
+      HEAP32[((tmPtr)>>2)] = date.getSeconds();
+      HEAP32[(((tmPtr)+(4))>>2)] = date.getMinutes();
+      HEAP32[(((tmPtr)+(8))>>2)] = date.getHours();
+      HEAP32[(((tmPtr)+(12))>>2)] = date.getDate();
+      HEAP32[(((tmPtr)+(16))>>2)] = date.getMonth();
+      HEAP32[(((tmPtr)+(20))>>2)] = date.getFullYear()-1900;
+      HEAP32[(((tmPtr)+(24))>>2)] = date.getDay();
+  
+      var start = new Date(date.getFullYear(), 0, 1);
+      var yday = ((date.getTime() - start.getTime()) / (1000 * 60 * 60 * 24))|0;
+      HEAP32[(((tmPtr)+(28))>>2)] = yday;
+      HEAP32[(((tmPtr)+(36))>>2)] = -(date.getTimezoneOffset() * 60);
+  
+      // Attention: DST is in December in South, and some regions don't have DST at all.
+      var summerOffset = new Date(date.getFullYear(), 6, 1).getTimezoneOffset();
+      var winterOffset = start.getTimezoneOffset();
+      var dst = (summerOffset != winterOffset && date.getTimezoneOffset() == Math.min(winterOffset, summerOffset))|0;
+      HEAP32[(((tmPtr)+(32))>>2)] = dst;
+    }
+
+  function _tzset_impl(timezone, daylight, tzname) {
+      var currentYear = new Date().getFullYear();
+      var winter = new Date(currentYear, 0, 1);
+      var summer = new Date(currentYear, 6, 1);
+      var winterOffset = winter.getTimezoneOffset();
+      var summerOffset = summer.getTimezoneOffset();
+  
+      // Local standard timezone offset. Local standard time is not adjusted for daylight savings.
+      // This code uses the fact that getTimezoneOffset returns a greater value during Standard Time versus Daylight Saving Time (DST).
+      // Thus it determines the expected output during Standard Time, and it compares whether the output of the given date the same (Standard) or less (DST).
+      var stdTimezoneOffset = Math.max(winterOffset, summerOffset);
+  
+      // timezone is specified as seconds west of UTC ("The external variable
+      // `timezone` shall be set to the difference, in seconds, between
+      // Coordinated Universal Time (UTC) and local standard time."), the same
+      // as returned by stdTimezoneOffset.
+      // See http://pubs.opengroup.org/onlinepubs/009695399/functions/tzset.html
+      HEAP32[((timezone)>>2)] = stdTimezoneOffset * 60;
+  
+      HEAP32[((daylight)>>2)] = Number(winterOffset != summerOffset);
+  
+      function extractZone(date) {
+        var match = date.toTimeString().match(/\(([A-Za-z ]+)\)$/);
+        return match ? match[1] : "GMT";
+      };
+      var winterName = extractZone(winter);
+      var summerName = extractZone(summer);
+      var winterNamePtr = allocateUTF8(winterName);
+      var summerNamePtr = allocateUTF8(summerName);
+      if (summerOffset < winterOffset) {
+        // Northern hemisphere
+        HEAP32[((tzname)>>2)] = winterNamePtr;
+        HEAP32[(((tzname)+(4))>>2)] = summerNamePtr;
+      } else {
+        HEAP32[((tzname)>>2)] = summerNamePtr;
+        HEAP32[(((tzname)+(4))>>2)] = winterNamePtr;
+      }
+    }
+  function __tzset_js(timezone, daylight, tzname) {
+      // TODO: Use (malleable) environment variables instead of system settings.
+      if (__tzset_js.called) return;
+      __tzset_js.called = true;
+      _tzset_impl(timezone, daylight, tzname);
+    }
 
   var _emscripten_get_now;if (ENVIRONMENT_IS_NODE) {
     _emscripten_get_now = () => {
@@ -7779,6 +7846,17 @@ function GetCanvasIdJs(){ var canvasId = "#" + Module.canvas.id; var lengthBytes
       GL.programs[id] = null;
     }
 
+  function _glDeleteTextures(n, textures) {
+      for (var i = 0; i < n; i++) {
+        var id = HEAP32[(((textures)+(i*4))>>2)];
+        var texture = GL.textures[id];
+        if (!texture) continue; // GL spec: "glDeleteTextures silently ignores 0s and names that do not correspond to existing textures".
+        GLctx.deleteTexture(texture);
+        texture.name = 0;
+        GL.textures[id] = null;
+      }
+    }
+
   function _glDepthFunc(x0) { GLctx['depthFunc'](x0) }
 
   function _glDisable(x0) { GLctx['disable'](x0) }
@@ -9015,6 +9093,370 @@ function GetCanvasIdJs(){ var canvasId = "#" + Module.canvas.id; var lengthBytes
       setTempRet0(val);
     }
 
+  function __isLeapYear(year) {
+        return year%4 === 0 && (year%100 !== 0 || year%400 === 0);
+    }
+  
+  function __arraySum(array, index) {
+      var sum = 0;
+      for (var i = 0; i <= index; sum += array[i++]) {
+        // no-op
+      }
+      return sum;
+    }
+  
+  var __MONTH_DAYS_LEAP = [31,29,31,30,31,30,31,31,30,31,30,31];
+  
+  var __MONTH_DAYS_REGULAR = [31,28,31,30,31,30,31,31,30,31,30,31];
+  function __addDays(date, days) {
+      var newDate = new Date(date.getTime());
+      while (days > 0) {
+        var leap = __isLeapYear(newDate.getFullYear());
+        var currentMonth = newDate.getMonth();
+        var daysInCurrentMonth = (leap ? __MONTH_DAYS_LEAP : __MONTH_DAYS_REGULAR)[currentMonth];
+  
+        if (days > daysInCurrentMonth-newDate.getDate()) {
+          // we spill over to next month
+          days -= (daysInCurrentMonth-newDate.getDate()+1);
+          newDate.setDate(1);
+          if (currentMonth < 11) {
+            newDate.setMonth(currentMonth+1)
+          } else {
+            newDate.setMonth(0);
+            newDate.setFullYear(newDate.getFullYear()+1);
+          }
+        } else {
+          // we stay in current month
+          newDate.setDate(newDate.getDate()+days);
+          return newDate;
+        }
+      }
+  
+      return newDate;
+    }
+  function _strftime(s, maxsize, format, tm) {
+      // size_t strftime(char *restrict s, size_t maxsize, const char *restrict format, const struct tm *restrict timeptr);
+      // http://pubs.opengroup.org/onlinepubs/009695399/functions/strftime.html
+  
+      var tm_zone = HEAP32[(((tm)+(40))>>2)];
+  
+      var date = {
+        tm_sec: HEAP32[((tm)>>2)],
+        tm_min: HEAP32[(((tm)+(4))>>2)],
+        tm_hour: HEAP32[(((tm)+(8))>>2)],
+        tm_mday: HEAP32[(((tm)+(12))>>2)],
+        tm_mon: HEAP32[(((tm)+(16))>>2)],
+        tm_year: HEAP32[(((tm)+(20))>>2)],
+        tm_wday: HEAP32[(((tm)+(24))>>2)],
+        tm_yday: HEAP32[(((tm)+(28))>>2)],
+        tm_isdst: HEAP32[(((tm)+(32))>>2)],
+        tm_gmtoff: HEAP32[(((tm)+(36))>>2)],
+        tm_zone: tm_zone ? UTF8ToString(tm_zone) : ''
+      };
+  
+      var pattern = UTF8ToString(format);
+  
+      // expand format
+      var EXPANSION_RULES_1 = {
+        '%c': '%a %b %d %H:%M:%S %Y',     // Replaced by the locale's appropriate date and time representation - e.g., Mon Aug  3 14:02:01 2013
+        '%D': '%m/%d/%y',                 // Equivalent to %m / %d / %y
+        '%F': '%Y-%m-%d',                 // Equivalent to %Y - %m - %d
+        '%h': '%b',                       // Equivalent to %b
+        '%r': '%I:%M:%S %p',              // Replaced by the time in a.m. and p.m. notation
+        '%R': '%H:%M',                    // Replaced by the time in 24-hour notation
+        '%T': '%H:%M:%S',                 // Replaced by the time
+        '%x': '%m/%d/%y',                 // Replaced by the locale's appropriate date representation
+        '%X': '%H:%M:%S',                 // Replaced by the locale's appropriate time representation
+        // Modified Conversion Specifiers
+        '%Ec': '%c',                      // Replaced by the locale's alternative appropriate date and time representation.
+        '%EC': '%C',                      // Replaced by the name of the base year (period) in the locale's alternative representation.
+        '%Ex': '%m/%d/%y',                // Replaced by the locale's alternative date representation.
+        '%EX': '%H:%M:%S',                // Replaced by the locale's alternative time representation.
+        '%Ey': '%y',                      // Replaced by the offset from %EC (year only) in the locale's alternative representation.
+        '%EY': '%Y',                      // Replaced by the full alternative year representation.
+        '%Od': '%d',                      // Replaced by the day of the month, using the locale's alternative numeric symbols, filled as needed with leading zeros if there is any alternative symbol for zero; otherwise, with leading <space> characters.
+        '%Oe': '%e',                      // Replaced by the day of the month, using the locale's alternative numeric symbols, filled as needed with leading <space> characters.
+        '%OH': '%H',                      // Replaced by the hour (24-hour clock) using the locale's alternative numeric symbols.
+        '%OI': '%I',                      // Replaced by the hour (12-hour clock) using the locale's alternative numeric symbols.
+        '%Om': '%m',                      // Replaced by the month using the locale's alternative numeric symbols.
+        '%OM': '%M',                      // Replaced by the minutes using the locale's alternative numeric symbols.
+        '%OS': '%S',                      // Replaced by the seconds using the locale's alternative numeric symbols.
+        '%Ou': '%u',                      // Replaced by the weekday as a number in the locale's alternative representation (Monday=1).
+        '%OU': '%U',                      // Replaced by the week number of the year (Sunday as the first day of the week, rules corresponding to %U ) using the locale's alternative numeric symbols.
+        '%OV': '%V',                      // Replaced by the week number of the year (Monday as the first day of the week, rules corresponding to %V ) using the locale's alternative numeric symbols.
+        '%Ow': '%w',                      // Replaced by the number of the weekday (Sunday=0) using the locale's alternative numeric symbols.
+        '%OW': '%W',                      // Replaced by the week number of the year (Monday as the first day of the week) using the locale's alternative numeric symbols.
+        '%Oy': '%y',                      // Replaced by the year (offset from %C ) using the locale's alternative numeric symbols.
+      };
+      for (var rule in EXPANSION_RULES_1) {
+        pattern = pattern.replace(new RegExp(rule, 'g'), EXPANSION_RULES_1[rule]);
+      }
+  
+      var WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  
+      function leadingSomething(value, digits, character) {
+        var str = typeof value == 'number' ? value.toString() : (value || '');
+        while (str.length < digits) {
+          str = character[0]+str;
+        }
+        return str;
+      }
+  
+      function leadingNulls(value, digits) {
+        return leadingSomething(value, digits, '0');
+      }
+  
+      function compareByDay(date1, date2) {
+        function sgn(value) {
+          return value < 0 ? -1 : (value > 0 ? 1 : 0);
+        }
+  
+        var compare;
+        if ((compare = sgn(date1.getFullYear()-date2.getFullYear())) === 0) {
+          if ((compare = sgn(date1.getMonth()-date2.getMonth())) === 0) {
+            compare = sgn(date1.getDate()-date2.getDate());
+          }
+        }
+        return compare;
+      }
+  
+      function getFirstWeekStartDate(janFourth) {
+          switch (janFourth.getDay()) {
+            case 0: // Sunday
+              return new Date(janFourth.getFullYear()-1, 11, 29);
+            case 1: // Monday
+              return janFourth;
+            case 2: // Tuesday
+              return new Date(janFourth.getFullYear(), 0, 3);
+            case 3: // Wednesday
+              return new Date(janFourth.getFullYear(), 0, 2);
+            case 4: // Thursday
+              return new Date(janFourth.getFullYear(), 0, 1);
+            case 5: // Friday
+              return new Date(janFourth.getFullYear()-1, 11, 31);
+            case 6: // Saturday
+              return new Date(janFourth.getFullYear()-1, 11, 30);
+          }
+      }
+  
+      function getWeekBasedYear(date) {
+          var thisDate = __addDays(new Date(date.tm_year+1900, 0, 1), date.tm_yday);
+  
+          var janFourthThisYear = new Date(thisDate.getFullYear(), 0, 4);
+          var janFourthNextYear = new Date(thisDate.getFullYear()+1, 0, 4);
+  
+          var firstWeekStartThisYear = getFirstWeekStartDate(janFourthThisYear);
+          var firstWeekStartNextYear = getFirstWeekStartDate(janFourthNextYear);
+  
+          if (compareByDay(firstWeekStartThisYear, thisDate) <= 0) {
+            // this date is after the start of the first week of this year
+            if (compareByDay(firstWeekStartNextYear, thisDate) <= 0) {
+              return thisDate.getFullYear()+1;
+            } else {
+              return thisDate.getFullYear();
+            }
+          } else {
+            return thisDate.getFullYear()-1;
+          }
+      }
+  
+      var EXPANSION_RULES_2 = {
+        '%a': function(date) {
+          return WEEKDAYS[date.tm_wday].substring(0,3);
+        },
+        '%A': function(date) {
+          return WEEKDAYS[date.tm_wday];
+        },
+        '%b': function(date) {
+          return MONTHS[date.tm_mon].substring(0,3);
+        },
+        '%B': function(date) {
+          return MONTHS[date.tm_mon];
+        },
+        '%C': function(date) {
+          var year = date.tm_year+1900;
+          return leadingNulls((year/100)|0,2);
+        },
+        '%d': function(date) {
+          return leadingNulls(date.tm_mday, 2);
+        },
+        '%e': function(date) {
+          return leadingSomething(date.tm_mday, 2, ' ');
+        },
+        '%g': function(date) {
+          // %g, %G, and %V give values according to the ISO 8601:2000 standard week-based year.
+          // In this system, weeks begin on a Monday and week 1 of the year is the week that includes
+          // January 4th, which is also the week that includes the first Thursday of the year, and
+          // is also the first week that contains at least four days in the year.
+          // If the first Monday of January is the 2nd, 3rd, or 4th, the preceding days are part of
+          // the last week of the preceding year; thus, for Saturday 2nd January 1999,
+          // %G is replaced by 1998 and %V is replaced by 53. If December 29th, 30th,
+          // or 31st is a Monday, it and any following days are part of week 1 of the following year.
+          // Thus, for Tuesday 30th December 1997, %G is replaced by 1998 and %V is replaced by 01.
+  
+          return getWeekBasedYear(date).toString().substring(2);
+        },
+        '%G': function(date) {
+          return getWeekBasedYear(date);
+        },
+        '%H': function(date) {
+          return leadingNulls(date.tm_hour, 2);
+        },
+        '%I': function(date) {
+          var twelveHour = date.tm_hour;
+          if (twelveHour == 0) twelveHour = 12;
+          else if (twelveHour > 12) twelveHour -= 12;
+          return leadingNulls(twelveHour, 2);
+        },
+        '%j': function(date) {
+          // Day of the year (001-366)
+          return leadingNulls(date.tm_mday+__arraySum(__isLeapYear(date.tm_year+1900) ? __MONTH_DAYS_LEAP : __MONTH_DAYS_REGULAR, date.tm_mon-1), 3);
+        },
+        '%m': function(date) {
+          return leadingNulls(date.tm_mon+1, 2);
+        },
+        '%M': function(date) {
+          return leadingNulls(date.tm_min, 2);
+        },
+        '%n': function() {
+          return '\n';
+        },
+        '%p': function(date) {
+          if (date.tm_hour >= 0 && date.tm_hour < 12) {
+            return 'AM';
+          } else {
+            return 'PM';
+          }
+        },
+        '%S': function(date) {
+          return leadingNulls(date.tm_sec, 2);
+        },
+        '%t': function() {
+          return '\t';
+        },
+        '%u': function(date) {
+          return date.tm_wday || 7;
+        },
+        '%U': function(date) {
+          // Replaced by the week number of the year as a decimal number [00,53].
+          // The first Sunday of January is the first day of week 1;
+          // days in the new year before this are in week 0. [ tm_year, tm_wday, tm_yday]
+          var janFirst = new Date(date.tm_year+1900, 0, 1);
+          var firstSunday = janFirst.getDay() === 0 ? janFirst : __addDays(janFirst, 7-janFirst.getDay());
+          var endDate = new Date(date.tm_year+1900, date.tm_mon, date.tm_mday);
+  
+          // is target date after the first Sunday?
+          if (compareByDay(firstSunday, endDate) < 0) {
+            // calculate difference in days between first Sunday and endDate
+            var februaryFirstUntilEndMonth = __arraySum(__isLeapYear(endDate.getFullYear()) ? __MONTH_DAYS_LEAP : __MONTH_DAYS_REGULAR, endDate.getMonth()-1)-31;
+            var firstSundayUntilEndJanuary = 31-firstSunday.getDate();
+            var days = firstSundayUntilEndJanuary+februaryFirstUntilEndMonth+endDate.getDate();
+            return leadingNulls(Math.ceil(days/7), 2);
+          }
+  
+          return compareByDay(firstSunday, janFirst) === 0 ? '01': '00';
+        },
+        '%V': function(date) {
+          // Replaced by the week number of the year (Monday as the first day of the week)
+          // as a decimal number [01,53]. If the week containing 1 January has four
+          // or more days in the new year, then it is considered week 1.
+          // Otherwise, it is the last week of the previous year, and the next week is week 1.
+          // Both January 4th and the first Thursday of January are always in week 1. [ tm_year, tm_wday, tm_yday]
+          var janFourthThisYear = new Date(date.tm_year+1900, 0, 4);
+          var janFourthNextYear = new Date(date.tm_year+1901, 0, 4);
+  
+          var firstWeekStartThisYear = getFirstWeekStartDate(janFourthThisYear);
+          var firstWeekStartNextYear = getFirstWeekStartDate(janFourthNextYear);
+  
+          var endDate = __addDays(new Date(date.tm_year+1900, 0, 1), date.tm_yday);
+  
+          if (compareByDay(endDate, firstWeekStartThisYear) < 0) {
+            // if given date is before this years first week, then it belongs to the 53rd week of last year
+            return '53';
+          }
+  
+          if (compareByDay(firstWeekStartNextYear, endDate) <= 0) {
+            // if given date is after next years first week, then it belongs to the 01th week of next year
+            return '01';
+          }
+  
+          // given date is in between CW 01..53 of this calendar year
+          var daysDifference;
+          if (firstWeekStartThisYear.getFullYear() < date.tm_year+1900) {
+            // first CW of this year starts last year
+            daysDifference = date.tm_yday+32-firstWeekStartThisYear.getDate()
+          } else {
+            // first CW of this year starts this year
+            daysDifference = date.tm_yday+1-firstWeekStartThisYear.getDate();
+          }
+          return leadingNulls(Math.ceil(daysDifference/7), 2);
+        },
+        '%w': function(date) {
+          return date.tm_wday;
+        },
+        '%W': function(date) {
+          // Replaced by the week number of the year as a decimal number [00,53].
+          // The first Monday of January is the first day of week 1;
+          // days in the new year before this are in week 0. [ tm_year, tm_wday, tm_yday]
+          var janFirst = new Date(date.tm_year, 0, 1);
+          var firstMonday = janFirst.getDay() === 1 ? janFirst : __addDays(janFirst, janFirst.getDay() === 0 ? 1 : 7-janFirst.getDay()+1);
+          var endDate = new Date(date.tm_year+1900, date.tm_mon, date.tm_mday);
+  
+          // is target date after the first Monday?
+          if (compareByDay(firstMonday, endDate) < 0) {
+            var februaryFirstUntilEndMonth = __arraySum(__isLeapYear(endDate.getFullYear()) ? __MONTH_DAYS_LEAP : __MONTH_DAYS_REGULAR, endDate.getMonth()-1)-31;
+            var firstMondayUntilEndJanuary = 31-firstMonday.getDate();
+            var days = firstMondayUntilEndJanuary+februaryFirstUntilEndMonth+endDate.getDate();
+            return leadingNulls(Math.ceil(days/7), 2);
+          }
+          return compareByDay(firstMonday, janFirst) === 0 ? '01': '00';
+        },
+        '%y': function(date) {
+          // Replaced by the last two digits of the year as a decimal number [00,99]. [ tm_year]
+          return (date.tm_year+1900).toString().substring(2);
+        },
+        '%Y': function(date) {
+          // Replaced by the year as a decimal number (for example, 1997). [ tm_year]
+          return date.tm_year+1900;
+        },
+        '%z': function(date) {
+          // Replaced by the offset from UTC in the ISO 8601:2000 standard format ( +hhmm or -hhmm ).
+          // For example, "-0430" means 4 hours 30 minutes behind UTC (west of Greenwich).
+          var off = date.tm_gmtoff;
+          var ahead = off >= 0;
+          off = Math.abs(off) / 60;
+          // convert from minutes into hhmm format (which means 60 minutes = 100 units)
+          off = (off / 60)*100 + (off % 60);
+          return (ahead ? '+' : '-') + String("0000" + off).slice(-4);
+        },
+        '%Z': function(date) {
+          return date.tm_zone;
+        },
+        '%%': function() {
+          return '%';
+        }
+      };
+  
+      // Replace %% with a pair of NULLs (which cannot occur in a C string), then
+      // re-inject them after processing.
+      pattern = pattern.replace(/%%/g, '\0\0')
+      for (var rule in EXPANSION_RULES_2) {
+        if (pattern.includes(rule)) {
+          pattern = pattern.replace(new RegExp(rule, 'g'), EXPANSION_RULES_2[rule](date));
+        }
+      }
+      pattern = pattern.replace(/\0\0/g, '%')
+  
+      var bytes = intArrayFromString(pattern, false);
+      if (bytes.length > maxsize) {
+        return 0;
+      }
+  
+      writeArrayToMemory(bytes, s);
+      return bytes.length-1;
+    }
+
   function _time(ptr) {
       ;
       var ret = (Date.now()/1000)|0;
@@ -9547,6 +9989,8 @@ var asmLibraryArg = {
   "__syscall_getcwd": ___syscall_getcwd,
   "__syscall_ioctl": ___syscall_ioctl,
   "__syscall_open": ___syscall_open,
+  "_localtime_js": __localtime_js,
+  "_tzset_js": __tzset_js,
   "clock_gettime": _clock_gettime,
   "emscripten_asm_const_double": _emscripten_asm_const_double,
   "emscripten_asm_const_int": _emscripten_asm_const_int,
@@ -9756,6 +10200,7 @@ var asmLibraryArg = {
   "glCreateShader": _glCreateShader,
   "glCullFace": _glCullFace,
   "glDeleteProgram": _glDeleteProgram,
+  "glDeleteTextures": _glDeleteTextures,
   "glDepthFunc": _glDepthFunc,
   "glDisable": _glDisable,
   "glDrawArrays": _glDrawArrays,
@@ -9809,6 +10254,7 @@ var asmLibraryArg = {
   "glfwTerminate": _glfwTerminate,
   "glfwWindowHint": _glfwWindowHint,
   "setTempRet0": _setTempRet0,
+  "strftime": _strftime,
   "time": _time
 };
 Asyncify.instrumentWasmImports(asmLibraryArg);
@@ -9817,13 +10263,13 @@ var asm = createWasm();
 var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__wasm_call_ctors");
 
 /** @type {function(...*):?} */
-var _main = Module["_main"] = createExportWrapper("main");
+var _free = Module["_free"] = createExportWrapper("free");
 
 /** @type {function(...*):?} */
 var _malloc = Module["_malloc"] = createExportWrapper("malloc");
 
 /** @type {function(...*):?} */
-var _free = Module["_free"] = createExportWrapper("free");
+var _main = Module["_main"] = createExportWrapper("main");
 
 /** @type {function(...*):?} */
 var ___errno_location = Module["___errno_location"] = createExportWrapper("__errno_location");
