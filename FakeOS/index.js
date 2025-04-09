@@ -201,7 +201,7 @@ Module['FS_createPath']("/build/CMakeFiles", "game.dir", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/raygui.h", "start": 0, "end": 279704}, {"filename": "/main.c", "start": 279704, "end": 288225}, {"filename": "/CMakeLists.txt", "start": 288225, "end": 288678}, {"filename": "/assets/volumeMax.png", "start": 288678, "end": 289639}, {"filename": "/assets/volumeLow.png", "start": 289639, "end": 290139}, {"filename": "/assets/volumeMute.png", "start": 290139, "end": 290623}, {"filename": "/assets/loginBackground.jpg", "start": 290623, "end": 3558970}, {"filename": "/assets/user3.png", "start": 3558970, "end": 3595940}, {"filename": "/assets/user2.png", "start": 3595940, "end": 3627278}, {"filename": "/assets/user.png", "start": 3627278, "end": 3661216}, {"filename": "/assets/wifi.png", "start": 3661216, "end": 3662120}, {"filename": "/assets/cursor.png", "start": 3662120, "end": 3667844}, {"filename": "/assets/logo.png", "start": 3667844, "end": 5068545}, {"filename": "/assets/volumeMid.png", "start": 5068545, "end": 5069255}, {"filename": "/build/Makefile", "start": 5069255, "end": 5074374}, {"filename": "/build/CMakeCache.txt", "start": 5074374, "end": 5086634}, {"filename": "/build/cmake_install.cmake", "start": 5086634, "end": 5088286}, {"filename": "/build/game", "start": 5088286, "end": 6183390}, {"filename": "/build/CMakeFiles/cmake.check_cache", "start": 6183390, "end": 6183475}, {"filename": "/build/CMakeFiles/Makefile.cmake", "start": 6183475, "end": 6189096}, {"filename": "/build/CMakeFiles/TargetDirectories.txt", "start": 6189096, "end": 6189306}, {"filename": "/build/CMakeFiles/CMakeDirectoryInformation.cmake", "start": 6189306, "end": 6189964}, {"filename": "/build/CMakeFiles/CMakeOutput.log", "start": 6189964, "end": 6213239}, {"filename": "/build/CMakeFiles/Makefile2", "start": 6213239, "end": 6216752}, {"filename": "/build/CMakeFiles/progress.marks", "start": 6216752, "end": 6216754}, {"filename": "/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin", "start": 6216754, "end": 6232722}, {"filename": "/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake", "start": 6232722, "end": 6235163}, {"filename": "/build/CMakeFiles/3.22.1/CMakeSystem.cmake", "start": 6235163, "end": 6235561}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c", "start": 6235561, "end": 6260414}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/a.out", "start": 6260414, "end": 6276502}, {"filename": "/build/CMakeFiles/game.dir/flags.make", "start": 6276502, "end": 6276735}, {"filename": "/build/CMakeFiles/game.dir/build.make", "start": 6276735, "end": 6281004}, {"filename": "/build/CMakeFiles/game.dir/progress.make", "start": 6281004, "end": 6281047}, {"filename": "/build/CMakeFiles/game.dir/link.txt", "start": 6281047, "end": 6281255}, {"filename": "/build/CMakeFiles/game.dir/cmake_clean.cmake", "start": 6281255, "end": 6281516}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.make", "start": 6281516, "end": 6289371}, {"filename": "/build/CMakeFiles/game.dir/main.c.o", "start": 6289371, "end": 6555875}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.ts", "start": 6555875, "end": 6555986}, {"filename": "/build/CMakeFiles/game.dir/depend.make", "start": 6555986, "end": 6556074}, {"filename": "/build/CMakeFiles/game.dir/main.c.o.d", "start": 6556074, "end": 6560013}, {"filename": "/build/CMakeFiles/game.dir/DependInfo.cmake", "start": 6560013, "end": 6560556}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.internal", "start": 6560556, "end": 6564460}], "remote_package_size": 6564460, "package_uuid": "b46d6575-5ec4-46fe-9172-f992023dd43d"});
+    loadPackage({"files": [{"filename": "/raygui.h", "start": 0, "end": 279704}, {"filename": "/index.wasm", "start": 279704, "end": 959232}, {"filename": "/index.html", "start": 959232, "end": 1061738}, {"filename": "/index.js", "start": 1061738, "end": 1549806}, {"filename": "/index.data", "start": 1549806, "end": 3099612}, {"filename": "/main.c", "start": 3099612, "end": 3108051}, {"filename": "/CMakeLists.txt", "start": 3108051, "end": 3108504}, {"filename": "/assets/volumeMax.png", "start": 3108504, "end": 3109465}, {"filename": "/assets/volumeLow.png", "start": 3109465, "end": 3109965}, {"filename": "/assets/volumeMute.png", "start": 3109965, "end": 3110449}, {"filename": "/assets/loginBackground.jpg", "start": 3110449, "end": 6378796}, {"filename": "/assets/user3.png", "start": 6378796, "end": 6415766}, {"filename": "/assets/user2.png", "start": 6415766, "end": 6447104}, {"filename": "/assets/user.png", "start": 6447104, "end": 6481042}, {"filename": "/assets/wifi.png", "start": 6481042, "end": 6481946}, {"filename": "/assets/cursor.png", "start": 6481946, "end": 6487670}, {"filename": "/assets/logo.png", "start": 6487670, "end": 7888371}, {"filename": "/assets/volumeMid.png", "start": 7888371, "end": 7889081}, {"filename": "/build/Makefile", "start": 7889081, "end": 7894200}, {"filename": "/build/CMakeCache.txt", "start": 7894200, "end": 7906460}, {"filename": "/build/cmake_install.cmake", "start": 7906460, "end": 7908112}, {"filename": "/build/game", "start": 7908112, "end": 9003152}, {"filename": "/build/CMakeFiles/cmake.check_cache", "start": 9003152, "end": 9003237}, {"filename": "/build/CMakeFiles/Makefile.cmake", "start": 9003237, "end": 9008858}, {"filename": "/build/CMakeFiles/TargetDirectories.txt", "start": 9008858, "end": 9009068}, {"filename": "/build/CMakeFiles/CMakeDirectoryInformation.cmake", "start": 9009068, "end": 9009726}, {"filename": "/build/CMakeFiles/CMakeOutput.log", "start": 9009726, "end": 9033001}, {"filename": "/build/CMakeFiles/Makefile2", "start": 9033001, "end": 9036514}, {"filename": "/build/CMakeFiles/progress.marks", "start": 9036514, "end": 9036516}, {"filename": "/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin", "start": 9036516, "end": 9052484}, {"filename": "/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake", "start": 9052484, "end": 9054925}, {"filename": "/build/CMakeFiles/3.22.1/CMakeSystem.cmake", "start": 9054925, "end": 9055323}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c", "start": 9055323, "end": 9080176}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/a.out", "start": 9080176, "end": 9096264}, {"filename": "/build/CMakeFiles/game.dir/flags.make", "start": 9096264, "end": 9096497}, {"filename": "/build/CMakeFiles/game.dir/build.make", "start": 9096497, "end": 9100766}, {"filename": "/build/CMakeFiles/game.dir/progress.make", "start": 9100766, "end": 9100809}, {"filename": "/build/CMakeFiles/game.dir/link.txt", "start": 9100809, "end": 9101017}, {"filename": "/build/CMakeFiles/game.dir/cmake_clean.cmake", "start": 9101017, "end": 9101278}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.make", "start": 9101278, "end": 9109133}, {"filename": "/build/CMakeFiles/game.dir/main.c.o", "start": 9109133, "end": 9375637}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.ts", "start": 9375637, "end": 9375748}, {"filename": "/build/CMakeFiles/game.dir/depend.make", "start": 9375748, "end": 9375836}, {"filename": "/build/CMakeFiles/game.dir/main.c.o.d", "start": 9375836, "end": 9379775}, {"filename": "/build/CMakeFiles/game.dir/DependInfo.cmake", "start": 9379775, "end": 9380318}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.internal", "start": 9380318, "end": 9384222}], "remote_package_size": 9384222, "package_uuid": "19aaa9c4-9c6e-41e2-839a-5dc6fc36af86"});
 
   })();
 
@@ -2603,6 +2603,13 @@ function GetCanvasIdJs(){ var canvasId = "#" + Module.canvas.id; var lengthBytes
         },write:function(stream, buffer, offset, length, position, canOwn) {
           // The data buffer should be a typed array view
           assert(!(buffer instanceof ArrayBuffer));
+          // If the buffer is located in main memory (HEAP), and if
+          // memory can grow, we can't hold on to references of the
+          // memory buffer, as they may get invalidated. That means we
+          // need to do copy its contents.
+          if (buffer.buffer === HEAP8.buffer) {
+            canOwn = false;
+          }
   
           if (!length) return 0;
           var node = stream.node;
@@ -6497,16 +6504,75 @@ function GetCanvasIdJs(){ var canvasId = "#" + Module.canvas.id; var lengthBytes
     }
 
   function _emscripten_get_heap_max() {
-      return HEAPU8.length;
+      // Stay one Wasm page short of 4GB: while e.g. Chrome is able to allocate
+      // full 4GB Wasm memories, the size will wrap back to 0 bytes in Wasm side
+      // for any code that deals with heap sizes, which would require special
+      // casing all heap size related code to treat 0 specially.
+      return 2147483648;
     }
   
-  function abortOnCannotGrowMemory(requestedSize) {
-      abort('Cannot enlarge memory arrays to size ' + requestedSize + ' bytes (OOM). Either (1) compile with  -s INITIAL_MEMORY=X  with X higher than the current value ' + HEAP8.length + ', (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which allows increasing the size at runtime, or (3) if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 ');
+  function emscripten_realloc_buffer(size) {
+      try {
+        // round size grow request up to wasm page size (fixed 64KB per spec)
+        wasmMemory.grow((size - buffer.byteLength + 65535) >>> 16); // .grow() takes a delta compared to the previous size
+        updateGlobalBufferAndViews(wasmMemory.buffer);
+        return 1 /*success*/;
+      } catch(e) {
+        err('emscripten_realloc_buffer: Attempted to grow heap from ' + buffer.byteLength  + ' bytes to ' + size + ' bytes, but got error: ' + e);
+      }
+      // implicit 0 return to save code size (caller will cast "undefined" into 0
+      // anyhow)
     }
   function _emscripten_resize_heap(requestedSize) {
       var oldSize = HEAPU8.length;
       requestedSize = requestedSize >>> 0;
-      abortOnCannotGrowMemory(requestedSize);
+      // With pthreads, races can happen (another thread might increase the size
+      // in between), so return a failure, and let the caller retry.
+      assert(requestedSize > oldSize);
+  
+      // Memory resize rules:
+      // 1.  Always increase heap size to at least the requested size, rounded up
+      //     to next page multiple.
+      // 2a. If MEMORY_GROWTH_LINEAR_STEP == -1, excessively resize the heap
+      //     geometrically: increase the heap size according to
+      //     MEMORY_GROWTH_GEOMETRIC_STEP factor (default +20%), At most
+      //     overreserve by MEMORY_GROWTH_GEOMETRIC_CAP bytes (default 96MB).
+      // 2b. If MEMORY_GROWTH_LINEAR_STEP != -1, excessively resize the heap
+      //     linearly: increase the heap size by at least
+      //     MEMORY_GROWTH_LINEAR_STEP bytes.
+      // 3.  Max size for the heap is capped at 2048MB-WASM_PAGE_SIZE, or by
+      //     MAXIMUM_MEMORY, or by ASAN limit, depending on which is smallest
+      // 4.  If we were unable to allocate as much memory, it may be due to
+      //     over-eager decision to excessively reserve due to (3) above.
+      //     Hence if an allocation fails, cut down on the amount of excess
+      //     growth, in an attempt to succeed to perform a smaller allocation.
+  
+      // A limit is set for how much we can grow. We should not exceed that
+      // (the wasm binary specifies it, so if we tried, we'd fail anyhow).
+      var maxHeapSize = _emscripten_get_heap_max();
+      if (requestedSize > maxHeapSize) {
+        err('Cannot enlarge memory, asked to go up to ' + requestedSize + ' bytes, but the limit is ' + maxHeapSize + ' bytes!');
+        return false;
+      }
+  
+      // Loop through potential heap size increases. If we attempt a too eager
+      // reservation that fails, cut down on the attempted size and reserve a
+      // smaller bump instead. (max 3 times, chosen somewhat arbitrarily)
+      for (var cutDown = 1; cutDown <= 4; cutDown *= 2) {
+        var overGrownHeapSize = oldSize * (1 + 0.2 / cutDown); // ensure geometric growth
+        // but limit overreserving (default to capping at +96MB overgrowth at most)
+        overGrownHeapSize = Math.min(overGrownHeapSize, requestedSize + 100663296 );
+  
+        var newSize = Math.min(maxHeapSize, alignUp(Math.max(requestedSize, overGrownHeapSize), 65536));
+  
+        var replacement = emscripten_realloc_buffer(newSize);
+        if (replacement) {
+  
+          return true;
+        }
+      }
+      err('Failed to grow the heap from ' + oldSize + ' bytes to ' + newSize + ' bytes, not enough memory!');
+      return false;
     }
 
   function _emscripten_sample_gamepad_data() {
@@ -10466,7 +10532,6 @@ if (!Object.getOwnPropertyDescriptor(Module, "abort")) Module["abort"] = () => a
 if (!Object.getOwnPropertyDescriptor(Module, "keepRuntimeAlive")) Module["keepRuntimeAlive"] = () => abort("'keepRuntimeAlive' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
 if (!Object.getOwnPropertyDescriptor(Module, "zeroMemory")) Module["zeroMemory"] = () => abort("'zeroMemory' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
 if (!Object.getOwnPropertyDescriptor(Module, "stringToNewUTF8")) Module["stringToNewUTF8"] = () => abort("'stringToNewUTF8' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-if (!Object.getOwnPropertyDescriptor(Module, "abortOnCannotGrowMemory")) Module["abortOnCannotGrowMemory"] = () => abort("'abortOnCannotGrowMemory' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
 if (!Object.getOwnPropertyDescriptor(Module, "emscripten_realloc_buffer")) Module["emscripten_realloc_buffer"] = () => abort("'emscripten_realloc_buffer' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
 if (!Object.getOwnPropertyDescriptor(Module, "ENV")) Module["ENV"] = () => abort("'ENV' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
 if (!Object.getOwnPropertyDescriptor(Module, "withStackSave")) Module["withStackSave"] = () => abort("'withStackSave' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");

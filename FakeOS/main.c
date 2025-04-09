@@ -39,7 +39,6 @@ float volume = 100;
 
 //Cursor Variables
 Texture2D cursorTexture;
-Vector2 mousePos = {-50,-50};
 
 void drawLoadingScreen(){
 
@@ -229,8 +228,12 @@ void drawMainScreen(){
 
 }
 
+void drawCursor(){
+    Vector2 mousePos = GetMousePosition();
+    DrawTexturePro(cursorTexture, (Rectangle){0,0, 320, 320}, (Rectangle){mousePos.x, mousePos.y, 50, 50}, (Vector2){14,6}, 0.0f, WHITE);
+}
+
 void draw(){
-    mousePos = GetMousePosition();
 
     BeginDrawing();
 
@@ -240,11 +243,13 @@ void draw(){
     }
     else if(currentScene == 1){
         drawLoginScreen();
-        DrawTexturePro(cursorTexture, (Rectangle){0,0, 320, 320}, (Rectangle){mousePos.x, mousePos.y, 50, 50}, (Vector2){14,6}, 0.0f, WHITE);
+        drawCursor();
+        
     }
     else if(currentScene == 2){
         drawMainScreen();
-        DrawTexturePro(cursorTexture, (Rectangle){0,0, 320, 320}, (Rectangle){mousePos.x, mousePos.y, 50, 50}, (Vector2){14,6}, 0.0f, WHITE);
+        drawCursor();
+        
 
     }
 
@@ -268,7 +273,7 @@ void init(){
     volumeText[2] = LoadTexture("../assets/volumeMid.png");
     volumeText[3] = LoadTexture("../assets/volumeMax.png");
 
-    HideCursor();
+    //HideCursor();
 }
 
 
