@@ -201,7 +201,7 @@ Module['FS_createPath']("/build/CMakeFiles", "game.dir", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/raygui.h", "start": 0, "end": 279704}, {"filename": "/index.wasm", "start": 279704, "end": 959232}, {"filename": "/index.html", "start": 959232, "end": 1061738}, {"filename": "/index.js", "start": 1061738, "end": 1549806}, {"filename": "/index.data", "start": 1549806, "end": 3099612}, {"filename": "/main.c", "start": 3099612, "end": 3108051}, {"filename": "/CMakeLists.txt", "start": 3108051, "end": 3108504}, {"filename": "/assets/volumeMax.png", "start": 3108504, "end": 3109465}, {"filename": "/assets/volumeLow.png", "start": 3109465, "end": 3109965}, {"filename": "/assets/volumeMute.png", "start": 3109965, "end": 3110449}, {"filename": "/assets/loginBackground.jpg", "start": 3110449, "end": 6378796}, {"filename": "/assets/user3.png", "start": 6378796, "end": 6415766}, {"filename": "/assets/user2.png", "start": 6415766, "end": 6447104}, {"filename": "/assets/user.png", "start": 6447104, "end": 6481042}, {"filename": "/assets/wifi.png", "start": 6481042, "end": 6481946}, {"filename": "/assets/cursor.png", "start": 6481946, "end": 6487670}, {"filename": "/assets/logo.png", "start": 6487670, "end": 7888371}, {"filename": "/assets/volumeMid.png", "start": 7888371, "end": 7889081}, {"filename": "/build/Makefile", "start": 7889081, "end": 7894200}, {"filename": "/build/CMakeCache.txt", "start": 7894200, "end": 7906460}, {"filename": "/build/cmake_install.cmake", "start": 7906460, "end": 7908112}, {"filename": "/build/game", "start": 7908112, "end": 9003152}, {"filename": "/build/CMakeFiles/cmake.check_cache", "start": 9003152, "end": 9003237}, {"filename": "/build/CMakeFiles/Makefile.cmake", "start": 9003237, "end": 9008858}, {"filename": "/build/CMakeFiles/TargetDirectories.txt", "start": 9008858, "end": 9009068}, {"filename": "/build/CMakeFiles/CMakeDirectoryInformation.cmake", "start": 9009068, "end": 9009726}, {"filename": "/build/CMakeFiles/CMakeOutput.log", "start": 9009726, "end": 9033001}, {"filename": "/build/CMakeFiles/Makefile2", "start": 9033001, "end": 9036514}, {"filename": "/build/CMakeFiles/progress.marks", "start": 9036514, "end": 9036516}, {"filename": "/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin", "start": 9036516, "end": 9052484}, {"filename": "/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake", "start": 9052484, "end": 9054925}, {"filename": "/build/CMakeFiles/3.22.1/CMakeSystem.cmake", "start": 9054925, "end": 9055323}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c", "start": 9055323, "end": 9080176}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/a.out", "start": 9080176, "end": 9096264}, {"filename": "/build/CMakeFiles/game.dir/flags.make", "start": 9096264, "end": 9096497}, {"filename": "/build/CMakeFiles/game.dir/build.make", "start": 9096497, "end": 9100766}, {"filename": "/build/CMakeFiles/game.dir/progress.make", "start": 9100766, "end": 9100809}, {"filename": "/build/CMakeFiles/game.dir/link.txt", "start": 9100809, "end": 9101017}, {"filename": "/build/CMakeFiles/game.dir/cmake_clean.cmake", "start": 9101017, "end": 9101278}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.make", "start": 9101278, "end": 9109133}, {"filename": "/build/CMakeFiles/game.dir/main.c.o", "start": 9109133, "end": 9375637}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.ts", "start": 9375637, "end": 9375748}, {"filename": "/build/CMakeFiles/game.dir/depend.make", "start": 9375748, "end": 9375836}, {"filename": "/build/CMakeFiles/game.dir/main.c.o.d", "start": 9375836, "end": 9379775}, {"filename": "/build/CMakeFiles/game.dir/DependInfo.cmake", "start": 9379775, "end": 9380318}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.internal", "start": 9380318, "end": 9384222}], "remote_package_size": 9384222, "package_uuid": "19aaa9c4-9c6e-41e2-839a-5dc6fc36af86"});
+    loadPackage({"files": [{"filename": "/raygui.h", "start": 0, "end": 279704}, {"filename": "/index.wasm", "start": 279704, "end": 1542303}, {"filename": "/index.html", "start": 1542303, "end": 1644809}, {"filename": "/index.js", "start": 1644809, "end": 2138158}, {"filename": "/index.data", "start": 2138158, "end": 4276316}, {"filename": "/main.c", "start": 4276316, "end": 4288087}, {"filename": "/CMakeLists.txt", "start": 4288087, "end": 4288540}, {"filename": "/assets/volumeMax.png", "start": 4288540, "end": 4289501}, {"filename": "/assets/volumeLow.png", "start": 4289501, "end": 4290001}, {"filename": "/assets/volumeMute.png", "start": 4290001, "end": 4290485}, {"filename": "/assets/bootup.mp3", "start": 4290485, "end": 4398965, "audio": 1}, {"filename": "/assets/ding.mp3", "start": 4398965, "end": 4430453, "audio": 1}, {"filename": "/assets/loginBackground.jpg", "start": 4430453, "end": 7698800}, {"filename": "/assets/user3.png", "start": 7698800, "end": 7735770}, {"filename": "/assets/chrome.png", "start": 7735770, "end": 7857939}, {"filename": "/assets/user2.png", "start": 7857939, "end": 7889277}, {"filename": "/assets/rainbow.png", "start": 7889277, "end": 7918185}, {"filename": "/assets/user.png", "start": 7918185, "end": 7952123}, {"filename": "/assets/wifi.png", "start": 7952123, "end": 7953027}, {"filename": "/assets/cursor.png", "start": 7953027, "end": 7958751}, {"filename": "/assets/logo.png", "start": 7958751, "end": 9359452}, {"filename": "/assets/settings.png", "start": 9359452, "end": 9415681}, {"filename": "/assets/volumeMid.png", "start": 9415681, "end": 9416391}, {"filename": "/build/Makefile", "start": 9416391, "end": 9421510}, {"filename": "/build/CMakeCache.txt", "start": 9421510, "end": 9433770}, {"filename": "/build/cmake_install.cmake", "start": 9433770, "end": 9435422}, {"filename": "/build/game", "start": 9435422, "end": 11057022}, {"filename": "/build/CMakeFiles/cmake.check_cache", "start": 11057022, "end": 11057107}, {"filename": "/build/CMakeFiles/Makefile.cmake", "start": 11057107, "end": 11062728}, {"filename": "/build/CMakeFiles/TargetDirectories.txt", "start": 11062728, "end": 11062938}, {"filename": "/build/CMakeFiles/CMakeDirectoryInformation.cmake", "start": 11062938, "end": 11063596}, {"filename": "/build/CMakeFiles/CMakeOutput.log", "start": 11063596, "end": 11086871}, {"filename": "/build/CMakeFiles/Makefile2", "start": 11086871, "end": 11090384}, {"filename": "/build/CMakeFiles/progress.marks", "start": 11090384, "end": 11090386}, {"filename": "/build/CMakeFiles/3.22.1/CMakeDetermineCompilerABI_C.bin", "start": 11090386, "end": 11106354}, {"filename": "/build/CMakeFiles/3.22.1/CMakeCCompiler.cmake", "start": 11106354, "end": 11108795}, {"filename": "/build/CMakeFiles/3.22.1/CMakeSystem.cmake", "start": 11108795, "end": 11109193}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c", "start": 11109193, "end": 11134046}, {"filename": "/build/CMakeFiles/3.22.1/CompilerIdC/a.out", "start": 11134046, "end": 11150134}, {"filename": "/build/CMakeFiles/game.dir/flags.make", "start": 11150134, "end": 11150367}, {"filename": "/build/CMakeFiles/game.dir/build.make", "start": 11150367, "end": 11154636}, {"filename": "/build/CMakeFiles/game.dir/progress.make", "start": 11154636, "end": 11154679}, {"filename": "/build/CMakeFiles/game.dir/link.txt", "start": 11154679, "end": 11154887}, {"filename": "/build/CMakeFiles/game.dir/cmake_clean.cmake", "start": 11154887, "end": 11155148}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.make", "start": 11155148, "end": 11163003}, {"filename": "/build/CMakeFiles/game.dir/main.c.o", "start": 11163003, "end": 11435443}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.ts", "start": 11435443, "end": 11435554}, {"filename": "/build/CMakeFiles/game.dir/depend.make", "start": 11435554, "end": 11435642}, {"filename": "/build/CMakeFiles/game.dir/main.c.o.d", "start": 11435642, "end": 11439581}, {"filename": "/build/CMakeFiles/game.dir/DependInfo.cmake", "start": 11439581, "end": 11440124}, {"filename": "/build/CMakeFiles/game.dir/compiler_depend.internal", "start": 11440124, "end": 11444028}], "remote_package_size": 11444028, "package_uuid": "3bb70129-def8-4cc5-996a-679ab451b40f"});
 
   })();
 
@@ -1946,49 +1946,59 @@ var tempI64;
 // === Body ===
 
 var ASM_CONSTS = {
-  38224: function() {if (document.fullscreenElement) return 1;},  
- 38270: function() {return Module.canvas.width;},  
- 38302: function() {return parseInt(Module.canvas.style.width);},  
- 38350: function() {document.exitFullscreen();},  
- 38377: function() {setTimeout(function() { Module.requestFullscreen(false, false); }, 100);},  
- 38450: function() {if (document.fullscreenElement) return 1;},  
- 38496: function() {return Module.canvas.width;},  
- 38528: function() {return screen.width;},  
- 38553: function() {document.exitFullscreen();},  
- 38580: function() {setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100);},  
- 38713: function() {return window.innerWidth;},  
- 38739: function() {return window.innerHeight;},  
- 38766: function() {if (document.fullscreenElement) return 1;},  
- 38812: function() {return Module.canvas.width;},  
- 38844: function() {return parseInt(Module.canvas.style.width);},  
- 38892: function() {if (document.fullscreenElement) return 1;},  
- 38938: function() {return Module.canvas.width;},  
- 38970: function() {return screen.width;},  
- 38995: function() {return window.innerWidth;},  
- 39021: function() {return window.innerHeight;},  
- 39048: function() {if (document.fullscreenElement) return 1;},  
- 39094: function() {return Module.canvas.width;},  
- 39126: function() {return screen.width;},  
- 39151: function() {document.exitFullscreen();},  
- 39178: function() {if (document.fullscreenElement) return 1;},  
- 39224: function() {return Module.canvas.width;},  
- 39256: function() {return parseInt(Module.canvas.style.width);},  
- 39304: function() {document.exitFullscreen();},  
- 39331: function($0) {Module.canvas.style.opacity = $0;},  
- 39369: function() {return screen.width;},  
- 39394: function() {return screen.height;},  
- 39420: function() {return window.screenX;},  
- 39447: function() {return window.screenY;},  
- 39474: function() {return window.devicePixelRatio;},  
- 39510: function($0) {navigator.clipboard.writeText(UTF8ToString($0));},  
- 39563: function($0) {Module.canvas.style.cursor = UTF8ToString($0);},  
- 39614: function() {Module.canvas.style.cursor = 'none';},  
- 39651: function($0, $1, $2, $3) {try { navigator.getGamepads()[$0].vibrationActuator.playEffect('dual-rumble', { startDelay: 0, duration: $3, weakMagnitude: $1, strongMagnitude: $2 }); } catch (e) { try { navigator.getGamepads()[$0].hapticActuators[0].pulse($2, $3); } catch (e) { } }},  
- 39907: function($0) {Module.canvas.style.cursor = UTF8ToString($0);},  
- 39958: function() {if (document.fullscreenElement) return 1;},  
- 40004: function() {return window.innerWidth;},  
- 40030: function() {return window.innerHeight;},  
- 40057: function() {if (document.pointerLockElement) return 1;}
+  73208: function() {if (document.fullscreenElement) return 1;},  
+ 73254: function() {return Module.canvas.width;},  
+ 73286: function() {return parseInt(Module.canvas.style.width);},  
+ 73334: function() {document.exitFullscreen();},  
+ 73361: function() {setTimeout(function() { Module.requestFullscreen(false, false); }, 100);},  
+ 73434: function() {if (document.fullscreenElement) return 1;},  
+ 73480: function() {return Module.canvas.width;},  
+ 73512: function() {return screen.width;},  
+ 73537: function() {document.exitFullscreen();},  
+ 73564: function() {setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100);},  
+ 73697: function() {return window.innerWidth;},  
+ 73723: function() {return window.innerHeight;},  
+ 73750: function() {if (document.fullscreenElement) return 1;},  
+ 73796: function() {return Module.canvas.width;},  
+ 73828: function() {return parseInt(Module.canvas.style.width);},  
+ 73876: function() {if (document.fullscreenElement) return 1;},  
+ 73922: function() {return Module.canvas.width;},  
+ 73954: function() {return screen.width;},  
+ 73979: function() {return window.innerWidth;},  
+ 74005: function() {return window.innerHeight;},  
+ 74032: function() {if (document.fullscreenElement) return 1;},  
+ 74078: function() {return Module.canvas.width;},  
+ 74110: function() {return screen.width;},  
+ 74135: function() {document.exitFullscreen();},  
+ 74162: function() {if (document.fullscreenElement) return 1;},  
+ 74208: function() {return Module.canvas.width;},  
+ 74240: function() {return parseInt(Module.canvas.style.width);},  
+ 74288: function() {document.exitFullscreen();},  
+ 74315: function($0) {Module.canvas.style.opacity = $0;},  
+ 74353: function() {return screen.width;},  
+ 74378: function() {return screen.height;},  
+ 74404: function() {return window.screenX;},  
+ 74431: function() {return window.screenY;},  
+ 74458: function() {return window.devicePixelRatio;},  
+ 74494: function($0) {navigator.clipboard.writeText(UTF8ToString($0));},  
+ 74547: function($0) {Module.canvas.style.cursor = UTF8ToString($0);},  
+ 74598: function() {Module.canvas.style.cursor = 'none';},  
+ 74635: function($0, $1, $2, $3) {try { navigator.getGamepads()[$0].vibrationActuator.playEffect('dual-rumble', { startDelay: 0, duration: $3, weakMagnitude: $1, strongMagnitude: $2 }); } catch (e) { try { navigator.getGamepads()[$0].hapticActuators[0].pulse($2, $3); } catch (e) { } }},  
+ 74891: function($0) {Module.canvas.style.cursor = UTF8ToString($0);},  
+ 74942: function() {if (document.fullscreenElement) return 1;},  
+ 74988: function() {return window.innerWidth;},  
+ 75014: function() {return window.innerHeight;},  
+ 75041: function() {if (document.pointerLockElement) return 1;},  
+ 75088: function($0, $1, $2, $3, $4) {if (typeof window === 'undefined' || (window.AudioContext || window.webkitAudioContext) === undefined) { return 0; } if (typeof(window.miniaudio) === 'undefined') { window.miniaudio = { referenceCount: 0 }; window.miniaudio.device_type = {}; window.miniaudio.device_type.playback = $0; window.miniaudio.device_type.capture = $1; window.miniaudio.device_type.duplex = $2; window.miniaudio.device_state = {}; window.miniaudio.device_state.stopped = $3; window.miniaudio.device_state.started = $4; miniaudio.devices = []; miniaudio.track_device = function(device) { for (var iDevice = 0; iDevice < miniaudio.devices.length; ++iDevice) { if (miniaudio.devices[iDevice] == null) { miniaudio.devices[iDevice] = device; return iDevice; } } miniaudio.devices.push(device); return miniaudio.devices.length - 1; }; miniaudio.untrack_device_by_index = function(deviceIndex) { miniaudio.devices[deviceIndex] = null; while (miniaudio.devices.length > 0) { if (miniaudio.devices[miniaudio.devices.length-1] == null) { miniaudio.devices.pop(); } else { break; } } }; miniaudio.untrack_device = function(device) { for (var iDevice = 0; iDevice < miniaudio.devices.length; ++iDevice) { if (miniaudio.devices[iDevice] == device) { return miniaudio.untrack_device_by_index(iDevice); } } }; miniaudio.get_device_by_index = function(deviceIndex) { return miniaudio.devices[deviceIndex]; }; miniaudio.unlock_event_types = (function(){ return ['touchend', 'click']; })(); miniaudio.unlock = function() { for(var i = 0; i < miniaudio.devices.length; ++i) { var device = miniaudio.devices[i]; if (device != null && device.webaudio != null && device.state === window.miniaudio.device_state.started) { device.webaudio.resume().then(() => { Module._ma_device__on_notification_unlocked(device.pDevice); }, (error) => {console.error("Failed to resume audiocontext", error); }); } } miniaudio.unlock_event_types.map(function(event_type) { document.removeEventListener(event_type, miniaudio.unlock, true); }); }; miniaudio.unlock_event_types.map(function(event_type) { document.addEventListener(event_type, miniaudio.unlock, true); }); } window.miniaudio.referenceCount += 1; return 1;},  
+ 77246: function() {if (typeof(window.miniaudio) !== 'undefined') { window.miniaudio.referenceCount -= 1; if (window.miniaudio.referenceCount === 0) { delete window.miniaudio; } }},  
+ 77410: function() {return (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined);},  
+ 77514: function() {try { var temp = new (window.AudioContext || window.webkitAudioContext)(); var sampleRate = temp.sampleRate; temp.close(); return sampleRate; } catch(e) { return 0; }},  
+ 77685: function($0, $1, $2, $3, $4, $5) {var deviceType = $0; var channels = $1; var sampleRate = $2; var bufferSize = $3; var pIntermediaryBuffer = $4; var pDevice = $5; if (typeof(window.miniaudio) === 'undefined') { return -1; } var device = {}; var audioContextOptions = {}; if (deviceType == window.miniaudio.device_type.playback && sampleRate != 0) { audioContextOptions.sampleRate = sampleRate; } device.webaudio = new (window.AudioContext || window.webkitAudioContext)(audioContextOptions); device.webaudio.suspend(); device.state = window.miniaudio.device_state.stopped; var channelCountIn = 0; var channelCountOut = channels; if (deviceType != window.miniaudio.device_type.playback) { channelCountIn = channels; } device.scriptNode = device.webaudio.createScriptProcessor(bufferSize, channelCountIn, channelCountOut); device.scriptNode.onaudioprocess = function(e) { if (device.intermediaryBufferView == null || device.intermediaryBufferView.length == 0) { device.intermediaryBufferView = new Float32Array(Module.HEAPF32.buffer, pIntermediaryBuffer, bufferSize * channels); } if (deviceType == miniaudio.device_type.capture || deviceType == miniaudio.device_type.duplex) { for (var iChannel = 0; iChannel < channels; iChannel += 1) { var inputBuffer = e.inputBuffer.getChannelData(iChannel); var intermediaryBuffer = device.intermediaryBufferView; for (var iFrame = 0; iFrame < bufferSize; iFrame += 1) { intermediaryBuffer[iFrame*channels + iChannel] = inputBuffer[iFrame]; } } _ma_device_process_pcm_frames_capture__webaudio(pDevice, bufferSize, pIntermediaryBuffer); } if (deviceType == miniaudio.device_type.playback || deviceType == miniaudio.device_type.duplex) { _ma_device_process_pcm_frames_playback__webaudio(pDevice, bufferSize, pIntermediaryBuffer); for (var iChannel = 0; iChannel < e.outputBuffer.numberOfChannels; ++iChannel) { var outputBuffer = e.outputBuffer.getChannelData(iChannel); var intermediaryBuffer = device.intermediaryBufferView; for (var iFrame = 0; iFrame < bufferSize; iFrame += 1) { outputBuffer[iFrame] = intermediaryBuffer[iFrame*channels + iChannel]; } } } else { for (var iChannel = 0; iChannel < e.outputBuffer.numberOfChannels; ++iChannel) { e.outputBuffer.getChannelData(iChannel).fill(0.0); } } }; if (deviceType == miniaudio.device_type.capture || deviceType == miniaudio.device_type.duplex) { navigator.mediaDevices.getUserMedia({audio:true, video:false}) .then(function(stream) { device.streamNode = device.webaudio.createMediaStreamSource(stream); device.streamNode.connect(device.scriptNode); device.scriptNode.connect(device.webaudio.destination); }) .catch(function(error) { console.log("Failed to get user media: " + error); }); } if (deviceType == miniaudio.device_type.playback) { device.scriptNode.connect(device.webaudio.destination); } device.pDevice = pDevice; return miniaudio.track_device(device);},  
+ 80513: function($0) {return miniaudio.get_device_by_index($0).webaudio.sampleRate;},  
+ 80579: function($0) {var device = miniaudio.get_device_by_index($0); if (device.scriptNode !== undefined) { device.scriptNode.onaudioprocess = function(e) {}; device.scriptNode.disconnect(); device.scriptNode = undefined; } if (device.streamNode !== undefined) { device.streamNode.disconnect(); device.streamNode = undefined; } device.webaudio.close(); device.webaudio = undefined; device.pDevice = undefined;},  
+ 80972: function($0) {miniaudio.untrack_device_by_index($0);},  
+ 81015: function($0) {var device = miniaudio.get_device_by_index($0); device.webaudio.resume(); device.state = miniaudio.device_state.started;},  
+ 81140: function($0) {var device = miniaudio.get_device_by_index($0); device.webaudio.suspend(); device.state = miniaudio.device_state.stopped;}
 };
 function GetCanvasIdJs(){ var canvasId = "#" + Module.canvas.id; var lengthBytes = lengthBytesUTF8(canvasId) + 1; var stringOnWasmHeap = _malloc(lengthBytes); stringToUTF8(canvasId, stringOnWasmHeap, lengthBytes); return stringOnWasmHeap; }
 
@@ -2603,13 +2613,6 @@ function GetCanvasIdJs(){ var canvasId = "#" + Module.canvas.id; var lengthBytes
         },write:function(stream, buffer, offset, length, position, canOwn) {
           // The data buffer should be a typed array view
           assert(!(buffer instanceof ArrayBuffer));
-          // If the buffer is located in main memory (HEAP), and if
-          // memory can grow, we can't hold on to references of the
-          // memory buffer, as they may get invalidated. That means we
-          // need to do copy its contents.
-          if (buffer.buffer === HEAP8.buffer) {
-            canOwn = false;
-          }
   
           if (!length) return 0;
           var node = stream.node;
@@ -6504,75 +6507,16 @@ function GetCanvasIdJs(){ var canvasId = "#" + Module.canvas.id; var lengthBytes
     }
 
   function _emscripten_get_heap_max() {
-      // Stay one Wasm page short of 4GB: while e.g. Chrome is able to allocate
-      // full 4GB Wasm memories, the size will wrap back to 0 bytes in Wasm side
-      // for any code that deals with heap sizes, which would require special
-      // casing all heap size related code to treat 0 specially.
-      return 2147483648;
+      return HEAPU8.length;
     }
   
-  function emscripten_realloc_buffer(size) {
-      try {
-        // round size grow request up to wasm page size (fixed 64KB per spec)
-        wasmMemory.grow((size - buffer.byteLength + 65535) >>> 16); // .grow() takes a delta compared to the previous size
-        updateGlobalBufferAndViews(wasmMemory.buffer);
-        return 1 /*success*/;
-      } catch(e) {
-        err('emscripten_realloc_buffer: Attempted to grow heap from ' + buffer.byteLength  + ' bytes to ' + size + ' bytes, but got error: ' + e);
-      }
-      // implicit 0 return to save code size (caller will cast "undefined" into 0
-      // anyhow)
+  function abortOnCannotGrowMemory(requestedSize) {
+      abort('Cannot enlarge memory arrays to size ' + requestedSize + ' bytes (OOM). Either (1) compile with  -s INITIAL_MEMORY=X  with X higher than the current value ' + HEAP8.length + ', (2) compile with  -s ALLOW_MEMORY_GROWTH=1  which allows increasing the size at runtime, or (3) if you want malloc to return NULL (0) instead of this abort, compile with  -s ABORTING_MALLOC=0 ');
     }
   function _emscripten_resize_heap(requestedSize) {
       var oldSize = HEAPU8.length;
       requestedSize = requestedSize >>> 0;
-      // With pthreads, races can happen (another thread might increase the size
-      // in between), so return a failure, and let the caller retry.
-      assert(requestedSize > oldSize);
-  
-      // Memory resize rules:
-      // 1.  Always increase heap size to at least the requested size, rounded up
-      //     to next page multiple.
-      // 2a. If MEMORY_GROWTH_LINEAR_STEP == -1, excessively resize the heap
-      //     geometrically: increase the heap size according to
-      //     MEMORY_GROWTH_GEOMETRIC_STEP factor (default +20%), At most
-      //     overreserve by MEMORY_GROWTH_GEOMETRIC_CAP bytes (default 96MB).
-      // 2b. If MEMORY_GROWTH_LINEAR_STEP != -1, excessively resize the heap
-      //     linearly: increase the heap size by at least
-      //     MEMORY_GROWTH_LINEAR_STEP bytes.
-      // 3.  Max size for the heap is capped at 2048MB-WASM_PAGE_SIZE, or by
-      //     MAXIMUM_MEMORY, or by ASAN limit, depending on which is smallest
-      // 4.  If we were unable to allocate as much memory, it may be due to
-      //     over-eager decision to excessively reserve due to (3) above.
-      //     Hence if an allocation fails, cut down on the amount of excess
-      //     growth, in an attempt to succeed to perform a smaller allocation.
-  
-      // A limit is set for how much we can grow. We should not exceed that
-      // (the wasm binary specifies it, so if we tried, we'd fail anyhow).
-      var maxHeapSize = _emscripten_get_heap_max();
-      if (requestedSize > maxHeapSize) {
-        err('Cannot enlarge memory, asked to go up to ' + requestedSize + ' bytes, but the limit is ' + maxHeapSize + ' bytes!');
-        return false;
-      }
-  
-      // Loop through potential heap size increases. If we attempt a too eager
-      // reservation that fails, cut down on the attempted size and reserve a
-      // smaller bump instead. (max 3 times, chosen somewhat arbitrarily)
-      for (var cutDown = 1; cutDown <= 4; cutDown *= 2) {
-        var overGrownHeapSize = oldSize * (1 + 0.2 / cutDown); // ensure geometric growth
-        // but limit overreserving (default to capping at +96MB overgrowth at most)
-        overGrownHeapSize = Math.min(overGrownHeapSize, requestedSize + 100663296 );
-  
-        var newSize = Math.min(maxHeapSize, alignUp(Math.max(requestedSize, overGrownHeapSize), 65536));
-  
-        var replacement = emscripten_realloc_buffer(newSize);
-        if (replacement) {
-  
-          return true;
-        }
-      }
-      err('Failed to grow the heap from ' + oldSize + ' bytes to ' + newSize + ' bytes, not enough memory!');
-      return false;
+      abortOnCannotGrowMemory(requestedSize);
     }
 
   function _emscripten_sample_gamepad_data() {
@@ -10338,6 +10282,21 @@ var _malloc = Module["_malloc"] = createExportWrapper("malloc");
 var _main = Module["_main"] = createExportWrapper("main");
 
 /** @type {function(...*):?} */
+var _ma_device__on_notification_unlocked = Module["_ma_device__on_notification_unlocked"] = createExportWrapper("ma_device__on_notification_unlocked");
+
+/** @type {function(...*):?} */
+var _ma_malloc_emscripten = Module["_ma_malloc_emscripten"] = createExportWrapper("ma_malloc_emscripten");
+
+/** @type {function(...*):?} */
+var _ma_free_emscripten = Module["_ma_free_emscripten"] = createExportWrapper("ma_free_emscripten");
+
+/** @type {function(...*):?} */
+var _ma_device_process_pcm_frames_capture__webaudio = Module["_ma_device_process_pcm_frames_capture__webaudio"] = createExportWrapper("ma_device_process_pcm_frames_capture__webaudio");
+
+/** @type {function(...*):?} */
+var _ma_device_process_pcm_frames_playback__webaudio = Module["_ma_device_process_pcm_frames_playback__webaudio"] = createExportWrapper("ma_device_process_pcm_frames_playback__webaudio");
+
+/** @type {function(...*):?} */
 var ___errno_location = Module["___errno_location"] = createExportWrapper("__errno_location");
 
 /** @type {function(...*):?} */
@@ -10414,6 +10373,21 @@ var dynCall_iiiiii = Module["dynCall_iiiiii"] = createExportWrapper("dynCall_iii
 var dynCall_viiiiii = Module["dynCall_viiiiii"] = createExportWrapper("dynCall_viiiiii");
 
 /** @type {function(...*):?} */
+var dynCall_iii = Module["dynCall_iii"] = createExportWrapper("dynCall_iii");
+
+/** @type {function(...*):?} */
+var dynCall_iiiii = Module["dynCall_iiiii"] = createExportWrapper("dynCall_iiiii");
+
+/** @type {function(...*):?} */
+var dynCall_iiiji = Module["dynCall_iiiji"] = createExportWrapper("dynCall_iiiji");
+
+/** @type {function(...*):?} */
+var dynCall_iiiiiii = Module["dynCall_iiiiiii"] = createExportWrapper("dynCall_iiiiiii");
+
+/** @type {function(...*):?} */
+var dynCall_jii = Module["dynCall_jii"] = createExportWrapper("dynCall_jii");
+
+/** @type {function(...*):?} */
 var dynCall_vi = Module["dynCall_vi"] = createExportWrapper("dynCall_vi");
 
 /** @type {function(...*):?} */
@@ -10439,9 +10413,6 @@ var dynCall_v = Module["dynCall_v"] = createExportWrapper("dynCall_v");
 
 /** @type {function(...*):?} */
 var dynCall_viiiiiii = Module["dynCall_viiiiiii"] = createExportWrapper("dynCall_viiiiiii");
-
-/** @type {function(...*):?} */
-var dynCall_iii = Module["dynCall_iii"] = createExportWrapper("dynCall_iii");
 
 /** @type {function(...*):?} */
 var dynCall_vfi = Module["dynCall_vfi"] = createExportWrapper("dynCall_vfi");
@@ -10532,6 +10503,7 @@ if (!Object.getOwnPropertyDescriptor(Module, "abort")) Module["abort"] = () => a
 if (!Object.getOwnPropertyDescriptor(Module, "keepRuntimeAlive")) Module["keepRuntimeAlive"] = () => abort("'keepRuntimeAlive' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
 if (!Object.getOwnPropertyDescriptor(Module, "zeroMemory")) Module["zeroMemory"] = () => abort("'zeroMemory' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
 if (!Object.getOwnPropertyDescriptor(Module, "stringToNewUTF8")) Module["stringToNewUTF8"] = () => abort("'stringToNewUTF8' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+if (!Object.getOwnPropertyDescriptor(Module, "abortOnCannotGrowMemory")) Module["abortOnCannotGrowMemory"] = () => abort("'abortOnCannotGrowMemory' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
 if (!Object.getOwnPropertyDescriptor(Module, "emscripten_realloc_buffer")) Module["emscripten_realloc_buffer"] = () => abort("'emscripten_realloc_buffer' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
 if (!Object.getOwnPropertyDescriptor(Module, "ENV")) Module["ENV"] = () => abort("'ENV' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
 if (!Object.getOwnPropertyDescriptor(Module, "withStackSave")) Module["withStackSave"] = () => abort("'withStackSave' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");

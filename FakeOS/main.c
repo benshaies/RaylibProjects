@@ -35,7 +35,15 @@ Color textColor = (Color){230, 230, 230, 255};
 Texture2D wifi;
 Texture2D volumeText[4];
 int i = 3;
-float volume = 100;
+float volume = 100.0f;
+bool showVolumeMenu = false;
+Sound bootUp;
+Sound ding;
+bool bootSoundPlayed = false;
+Vector2 clickPoint;
+Vector2 oppositePoint;
+Rectangle draggingMouseRect;
+Texture2D rainbow, settings, chrome;
 
 //Cursor Variables
 Texture2D cursorTexture;
@@ -194,8 +202,15 @@ bool isHovered(Rectangle rect){
 }
 
 void drawMainScreen(){
+
     if(fadeLevel2 > 0.05f){
         fadeLevel2 -= 0.05;
+    }
+
+    if(!bootSoundPlayed){
+        SetSoundVolume(bootUp, 0.5f);
+        PlaySound(bootUp);
+        bootSoundPlayed = true;
     }
 
     //Time variables
@@ -211,18 +226,88 @@ void drawMainScreen(){
     //Task bar drawing
     DrawText(timeStr, 1200, 685, 20, textColor);
 
+    //Wifi button
     Rectangle wifiRect = (Rectangle){1140, 675, 40, 40};
     DrawTexturePro(wifi,(Rectangle){0,0, 64, 64}, (Rectangle){1150, 685, 20, 20}, (Vector2){0,0}, 0.0f, WHITE);
     DrawRectangleRec(wifiRect, isHovered(wifiRect) ? Fade(BLUE,0.1f):Fade(WHITE,0.0f));
 
+    //Volume button and controls
     DrawTexturePro(volumeText[i],(Rectangle){0,0, 50, 50}, (Rectangle){1100, 685, 20, 20}, (Vector2){0,0}, 0.0f, WHITE);
     DrawRectangle(1090, 675, 40, 40, isHovered((Rectangle){1090, 675, 40, 40}) ? Fade(BLUE,0.1f):Fade(WHITE,0.0f));
 
+    if(isHovered((Rectangle){1090, 675, 40, 40}) && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
+        showVolumeMenu = !showVolumeMenu;
+    }
+
+    GuiSetStyle(SLIDER, BORDER_COLOR_NORMAL, ColorToInt(BLACK));
+    GuiSetStyle(SLIDER, BORDER_COLOR_FOCUSED, ColorToInt(BLACK));
+    GuiSetStyle(SLIDER, BORDER_COLOR_PRESSED, ColorToInt(BLACK));
+    GuiSetStyle(SLIDER, TEXT_COLOR_NORMAL, ColorToInt(BLACK));
+    GuiSetStyle(SLIDER, TEXT_COLOR_FOCUSED, ColorToInt(taskBarColor));
+    GuiSetStyle(SLIDER, TEXT_COLOR_PRESSED, ColorToInt(taskBarColor));
+
+
+    char volumeLabel[4];
+    sprintf(volumeLabel, "%d", (int)volume);
+    if(showVolumeMenu){
+        GuiSlider((Rectangle){1060, 625, 100, 30}, " ", volumeLabel, &volume, 0.0f, 100.0f);
+        if(IsMouseButtonDown(MOUSE_BUTTON_LEFT) && CheckCollisionPointRec(GetMousePosition(), (Rectangle){1060, 625, 100, 30})){
+            SetSoundVolume(ding, volume/100);
+            PlaySound(ding);
+        }
+        
+    }
+
+    if(volume == 100){
+        i = 3;
+    }
+    else if(volume < 100 && volume >= 50){
+        i = 2;
+    }
+    else if(volume > 0 && volume < 50){
+        i = 1;
+    }
+    else if(volume == 0){
+        i = 0;
+    }
+
+    //Dragging Mouse Drawing
+    if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
+        clickPoint = GetMousePosition();
+    }
+    else{
+    }
+
+    if(IsMouseButtonDown(MOUSE_BUTTON_LEFT) && !showVolumeMenu){
+        oppositePoint = GetMousePosition();
+
+        float x = fmin(clickPoint.x, oppositePoint.x);
+        float y = fmin(clickPoint.y, oppositePoint.y);
+        float width = fabs(oppositePoint.x - clickPoint.x);
+        float height = fabs(oppositePoint.y - clickPoint.y);
+        Rectangle dragRect = { x, y, width, height };
+        
+        DrawRectangleRec(dragRect, Fade(BLUE, 0.3f));
+    }
+
+    //Desktop applications 
+    Rectangle settingsRect = {7.5, 7.5, 55, 55};
+    DrawTexturePro(settings, (Rectangle){0,0, 512,512}, (Rectangle){10,10, 50, 50}, (Vector2){0,0}, 0.0f, WHITE);
+    DrawRectangleRec(settingsRect, isHovered(settingsRect)? Fade(BLUE,0.15f):Fade(WHITE,0.0f));
+
+    Rectangle chromeRect = {7.5, 97.5, 55, 55};
+    DrawTexturePro(chrome, (Rectangle){0,0, 512,512}, (Rectangle){10, 100, 50, 50}, (Vector2){0,0}, 0.0f, WHITE);
+    DrawRectangleRec(chromeRect, isHovered(chromeRect)? Fade(BLUE,0.15f):Fade(WHITE,0.0f));
+
+    Rectangle rainbowRect = {7.5, 187.5, 55, 55};
+    DrawTexturePro(rainbow, (Rectangle){0,0, 256,256}, (Rectangle){10 ,190, 50, 50}, (Vector2){0,0}, 0.0f, WHITE);
+    DrawRectangleRec(rainbowRect, isHovered(rainbowRect)? Fade(BLUE,0.15f):Fade(WHITE,0.0f));
 
 
 
 
 
+    
 
     DrawRectangle(0,0, 1280, 720, Fade(BLACK, fadeLevel2));
 
@@ -259,6 +344,7 @@ void draw(){
 void init(){
     InitWindow(screenWidth, screenHeight, "KS-OS");
     SetTargetFPS(60);
+    InitAudioDevice();
 
     //Textures
     logo = LoadTexture("../assets/logo.png");
@@ -272,6 +358,13 @@ void init(){
     volumeText[1] = LoadTexture("../assets/volumeLow.png");
     volumeText[2] = LoadTexture("../assets/volumeMid.png");
     volumeText[3] = LoadTexture("../assets/volumeMax.png");
+    rainbow = LoadTexture("../assets/rainbow.png");
+    settings = LoadTexture("../assets/settings.png");
+    chrome = LoadTexture("../assets/chrome.png");
+
+    //Sounds
+    bootUp = LoadSound("../assets/bootup.mp3");
+    ding = LoadSound("../assets/ding.mp3");
 
     //HideCursor();
 }
@@ -286,4 +379,8 @@ int main(void){
     while(!WindowShouldClose()){
         draw();
     }
+
+    UnloadSound(bootUp);
+    UnloadSound(ding);
+    CloseAudioDevice();
 }
